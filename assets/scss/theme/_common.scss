@@ -1,0 +1,118 @@
+@use '../utils' as *;
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.w-img{
+	& img{
+		width: 100%;
+	}
+}
+.m-img{
+	& img{
+		max-width: 100%;
+	}
+}
+
+.fix {
+    overflow:hidden
+}
+.clear{
+    clear: both;
+}
+
+.z-index-1{
+	z-index: 1;
+}
+
+.z-index-11{
+	z-index: 11;
+}
+
+.br-radious{
+	border-radius: 25px;
+}
+
+.br-20{
+	border-radius: 20px;
+}
+
+.bg-pos-end{
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+
+img{
+	max-width: 100%;
+}
+
+.tc-upper{
+	text-transform: uppercase;
+}
+
+.overflow-y-visible{
+	overflow-x: hidden;
+	overflow-y: visible;
+}
+.overflow-x-visible{
+	overflow-x: visible;
+	overflow-y: hidden;
+}
+
+.p-relative{
+	position: relative;
+}
+.p-absolute{
+	position: absolute;
+}
+
+.tc-black-bg{
+	background-color: var(--tc-common-black);
+}
+
+.tc-theme-black-bg{
+	background-color: var(--tc-heading-color);
+}
+
+
+.tc-blue-bg{
+	background-color: var(--tc-theme-color);
+}
+
+.tc-nblue-bg{
+	background-color: var(--tc-theme-nblue);
+}
+
+.tc-yellow-bg{
+	background-color: var(--tc-theme-sec-color);
+}
+
+.tc-cream-bg{
+	background-color: var(--tc-cream-color);
+}
+
+.br-24{
+	border-radius: 24px;
+	border: 1px solid #57595C;
+}
+
+h1 span{
+	display: inline-block;
+}
+
+
+.tc-slide-transtion {
+	-webkit-transition-timing-function: linear;
+	transition-timing-function: linear;
+}
+.tc-brand-slide-element {
+	width: auto;
+	display: inline-block;
+}
+i{
+	display: inline-flex;
+}

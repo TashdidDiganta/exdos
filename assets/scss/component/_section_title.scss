@@ -1,0 +1,48 @@
+@use '../utils' as *;
+
+.tc-section{
+    &-subtitle{
+        display: block;
+        font-weight: 500;
+        font-size: 15px;
+        color: #57595c;
+        text-transform: uppercase;
+        & i{
+            width: 10px;
+            height: 10px;
+            border-radius: 50px;
+            background-color: #0057FC;
+        }
+    }
+    &-title{
+        font-size: 60px;
+        &-white{
+            color: #fff;
+        }
+        & br{
+            @media #{$xs}{
+                display: none;
+            }
+        }
+        @media #{$xl, $lg}{
+            font-size: 45px;
+        }
+        @media #{$md}{
+            font-size: 35px;
+            margin-bottom: 20px;
+        }
+        @media #{$xs}{
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+        &-wrapper{
+            & p{
+                & br{
+                    @media #{$xs}{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

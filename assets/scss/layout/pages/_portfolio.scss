@@ -1,0 +1,36 @@
+@use '../../utils' as *;
+
+.tc-portfolio{
+    &__text{
+        left: 80px;
+        opacity: 0;
+        bottom: 70px;
+        transition: .3s;
+        visibility: hidden;
+        & span{
+            font-size: 15px;
+            font-weight: 500;
+            color: #0A0E1A;
+            padding: 12px 20px 12px 20px;
+            background-color: #fff;
+            text-transform: uppercase;
+        }
+
+    }
+    &__title{
+        margin: 0;
+        color: #0A0E1A;
+        font-size: 30px;
+        margin-top: 15px;
+        font-weight: 400;
+        background-color: #fff;
+        padding: 12px 20px 12px 20px;
+
+    }
+
+    &:hover &__text{
+        opacity: 1;
+        bottom: 80px;
+        visibility: visible;
+    }
+}

@@ -1,0 +1,21 @@
+@use '../../utils' as *;
+
+.fs-100{
+    font-size: 100px;
+    @media #{$xl}{
+        font-size: 80px;
+    }
+    @media #{$xs}{
+        font-size: 70px;
+    }
+}
+
+.tc-form-title{
+    font-size: 30px;
+}
+
+.contact-form-box{
+    & input, & textarea{
+        border-color: #57595c;
+    }
+}

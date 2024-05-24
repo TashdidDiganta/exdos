@@ -1,0 +1,73 @@
+@use '../../utils' as *;
+
+.tc-project-tab-area{
+    @media #{$lg}{
+        padding-right: 30px;
+    }
+    @media #{$md,$sm}{
+        padding-right: 0px;
+    }
+    @media #{$xs}{
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+.tc-project{
+    &-tab{
+        @media #{$md,$xs}{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        & button{
+            color: #fff;
+            font-size: 100px;
+            font-weight: 400;
+            line-height: 1.2;
+            padding: 20px 100px;
+            padding-right: 35px;
+            transition: .3s;
+            border-bottom: 1px solid #2f446b;
+            font-family: var(--tc-heading-font);
+            text-align: left;
+            @media #{$xxlm}{
+                font-size: 80px;
+            }
+            @media #{$xl}{
+                font-size: 80px;
+                padding-left: 40px;
+            }
+            @media #{$lg}{
+                font-size: 60px;
+                padding-left: 20px;
+            }
+        @media #{$md,$xs}{
+            font-size: 18px;
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-bottom: 15px;
+        }
+            &.active{
+                color: var(--tc-theme-sec-color);
+                border-bottom: 1px solid var(--tc-theme-sec-color);
+            }
+        }
+        &-thumb{
+            @media #{$md}{
+               padding: 30px 30px 0 30px;
+            }
+            & img{
+                width: 100%;
+                border-radius: 10px;
+            }
+        }
+        &-content{
+            @media #{$md,$sm,$xs}{
+                padding-left: 0;
+             }
+        }
+    }
+}
+
+

@@ -1,0 +1,122 @@
+@use '../utils' as *;
+
+.tc-btn{
+    color: #fff;
+    font-size: 18px;
+    padding: 16px 32px;
+    border-radius: 5px;
+    display: inline-block;
+    font-family: var(--tc-heading-font);
+    background-color: var(--tc-theme-color);
+    position: relative;
+    overflow: hidden;
+    &:hover{
+        & .tc-btn-y-1{
+            transform: translateY(-100%);
+        }
+        & .tc-btn-y-2{
+            transform: translateY(-100%);
+        }
+        & i{
+            right: -25%;
+        }
+    }
+    &-sec{
+        font-size: 18px;
+        padding: 16px 32px;
+        border-radius: 5px;
+        display: inline-block;
+        overflow: hidden;
+        position: relative;
+        font-family: var(--tc-heading-font);
+        background-color: var(--tc-theme-sec-color);
+        &-lg{
+        padding: 22px 46px;
+        }
+        & i{
+            width: 22px;
+            height: 100%;
+            position: absolute;
+            bottom: -2px;
+            right: -8px;
+            transform: rotate(13deg);
+            background-color: #EFCF00;
+            transition: 0.3s;
+        }
+        &:hover{
+            & .tc-btn-y-1{
+                transform: translateY(-100%);
+            }
+            & .tc-btn-y-2{
+                color: var(--tc-heading-color);
+                transform: translateY(-100%);
+            }
+            & i{
+                right: -20%;
+            }
+        }
+    
+    }
+    &-circle{
+        color: #FFF;
+        font-family: var(--tc-heading-font);
+        font-size: 60px;
+        font-weight: 400;
+        border: 2px solid rgba(255, 255, 255, 0.2);
+        padding: 48px 75px;
+        display: inline-block;
+        line-height: 1;
+        border-radius: 100%;
+        opacity: 0.3;
+        transition: 0.3s;
+        @media #{$xs}{
+            font-size: 25px;
+        }
+       &:hover{
+        color: #fff;
+        opacity: 1;
+        background-color: var(--tc-theme-color);
+        border-color: var(--tc-theme-color);
+       }
+    }
+    &-wrap{
+        overflow: hidden;
+        position: relative;
+        display: block;
+        & span{
+            display: block;
+            transition: 0.2s;
+        }
+        
+        & .tc-btn-y-2{
+            position: absolute;
+            left: 0;
+            color: #fff;
+        }
+    }
+    & i{
+        width: 25px;
+        height: 120%;
+        position: absolute;
+        bottom: -7px;
+        right: -8px;
+        transform: rotate(13deg);
+        background-color: #71A2FF;
+        transition: 0.3s;
+    }
+
+}
+
+.tc-text-btn{
+    display: flex;
+    font-size: 18px;
+    color: #0A0E1A;
+    align-items: center;
+    font-family: var(--tc-heading-font);
+    & i{
+        margin-left: 8px;
+        transform: rotate(-45deg);
+    }
+
+}
+

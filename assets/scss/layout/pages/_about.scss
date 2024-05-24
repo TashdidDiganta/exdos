@@ -1,0 +1,70 @@
+@use '../../utils' as *;
+
+.tc-about-box{
+    @media #{$xl}{
+        padding-left: 20px;
+    }
+    @media #{$lg,$md,$xs}{
+        padding-left: 0px;
+    }
+}
+
+
+.tc-about{
+    &-video{
+        @media #{$xl}{
+            padding-left: 20px;
+        }
+        @media #{$lg,$md,$xs}{
+            padding-left: 0px;
+        }
+        &-info{
+            & h4{
+                color: #57595C;
+                font-size: 30px;
+            }
+        }
+}
+}
+
+.tc-about-content{
+    & ul{
+        margin-top: 25px;
+        & li{
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            margin-bottom: 20px;
+            & i{
+                color: #000;
+                font-size: 30px;
+                font-weight: 300;
+                line-height: 40px;
+            }
+            & span{
+                color: #0A0E1A;
+                font-size: 30px;
+                font-weight: 400;
+                font-family: var(--tc-heading-font);
+            }
+        }
+    }
+}
+
+.tc-about-circle-image{
+    top: 0;
+    right: 185px;
+    & img{
+        max-width: inherit;
+    }
+}
+
+.tc-about-shape-1{
+    top: 17%;
+    z-index: 1;
+}
+.tc-about-shape-2{
+    top: 50px;
+    right: 0;
+    z-index: 1;
+}

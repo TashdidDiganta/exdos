@@ -1,0 +1,64 @@
+@use '../../utils' as *;
+
+.tcservices{
+    padding: 40px 38px;
+    margin-right: -1px;
+    transition: 0.3s;
+    @media #{$xl}{
+        padding: 40px 30px;
+    }
+    &__icon{
+        & i{
+            font-size: 105px;
+        }
+    }
+    &__text{
+        &__title{
+            font-size: 30px;
+            font-weight: 400;
+        }
+    }
+    &__list{
+       & ul{
+        list-style: none;
+           & li{
+            color: #57595c;
+            margin-bottom: 5px;
+            &::before{
+                content: "";
+                height: 8px;
+                width: 8px;
+                margin-right: 8px;
+                border-radius: 30px;
+                display: inline-block;
+                transform: translateY(-1px);
+                background-color: #57595c;
+            }
+            }
+        }
+    }
+    &:hover{
+        background-color: var(--tc-cream-color);
+        & .tc-sv-btn{
+            color: #fff;
+            background-color: var(--tc-theme-color);
+        }
+    }
+}
+
+
+
+.tc-sv-btn{
+    display: flex;
+    font-size: 18px;
+    transition: 0.3s;
+    padding: 6px 28px;
+    border-radius: 5px;
+    align-items: center;
+    background-color: #FBF6EF;
+    justify-content: space-between;
+    font-family: var(--tc-heading-font);
+    & i{
+        transform: rotate(-40deg);
+    }
+}

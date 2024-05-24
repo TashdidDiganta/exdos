@@ -1,0 +1,183 @@
+@use '../../utils' as *;
+
+
+.tc-transparent-header {
+    top: 0;
+	left: 0;
+	right: 0;
+    z-index: 99;
+	position: absolute;
+}
+
+.tc-header-area{
+    @media #{$xl}{
+        padding-left: 30px;
+    }
+    @media #{$lg,$md}{
+        padding-left: 40px;
+    }
+    @media #{$xs}{
+        padding-left: 15px;
+    }
+}
+
+.tc-main-menu {
+    @media #{$xl}{
+        padding-left: 10px;
+    }
+    & ul{
+        & li{
+            display: inline;
+            margin-right: 40px;
+            position: relative;
+            @media #{$xxlm}{
+                margin-right: 27px;
+            }
+            @media #{$xl}{
+                margin-right: 20px;
+            }
+            & a{
+                color: #fff;
+                font-size: 18px;
+                display: inline-block;
+                padding: 37px 0px;
+                font-family: var(--tc-heading-font);
+                position: relative;
+                &::before{
+                    content: "\f118";
+                    top: 0;
+                    left: 26px;
+                    opacity: 0;
+                    font-size: 40px;
+                    transition: 0.3s;
+                    position: absolute;
+                    transform: rotate(133deg);
+                    color: var(--tc-theme-sec-color);
+                    font-family: var(--tc-flat-font);
+
+                }
+            }
+            & .sub-menu{
+                left: 0;
+                top: 105%;
+                opacity: 0;
+                width: 240px;
+                padding: 16px 0;
+                visibility: hidden;
+                position: absolute;
+                background: #fff;
+                transition: 0.3s;
+                z-index: 999;
+                & li{
+                    margin-right: 0;
+                    display: block;
+                    & a{
+                        color: #000;
+                        display: block;
+                        font-size: 17px;
+                        padding: 4px 25px;
+                        &::before{
+                            display: none;
+                        }
+                    }
+                    & .sub-menu{
+                        top: 105%;
+                        left: 100%;
+                        opacity: 0;
+                        visibility: hidden;
+                    }
+                    &:hover{
+                        & > a{
+                            color: #0057FC;
+                        }
+                        & .sub-menu{
+                            opacity: 1;
+                            visibility: visible;
+                        }
+                    }
+                }
+            }
+            &:hover{
+                & a{
+                    color: var(--tc-theme-sec-color);
+                    &::before{
+                        opacity: 1;
+                    }
+                }
+                & .sub-menu{
+                    top: 100%;
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
+    } 
+}
+
+.tc-header{
+    &-border{
+        border-bottom: 1px solid rgba(255, 255, 255, .5);
+    }
+    &-search{
+        margin-right: 30px;
+        @media #{$xl}{
+            margin-right: 20px;
+        }
+        & i{
+            font-size: 30px;
+            color: #B1B4BA;
+        }
+    }
+    &-cta{
+        display: flex;
+        align-items: center;
+        padding: 28px 50px 28px 30px;
+        border-left: 1px solid rgba(255, 255, 255, .5);
+        @media #{$xl}{
+            padding: 28px 21px 28px 10px;
+        }
+        &-icon{
+           margin-right: 15px;
+           & i{
+            font-size: 35px;
+            color: var(--tc-theme-sec-color);
+        }
+        }
+        &-text{
+            span{
+                display: block;
+                line-height: 1; 
+                font-size: 15px;
+                font-weight: 400;
+                color: #B1B4BA;
+                margin-bottom: 7px;
+                font-family: "DM Sans";
+            }
+            h4{
+                margin: 0;
+                color: #FFF;
+                font-size: 18px;
+                font-weight: 400;
+                font-family: Federo;
+            }
+        }
+    }
+    &-menu{
+        & button{            
+            padding: 20px 25px;
+            background: #23252D;
+            display: flex;
+            align-items: center;
+            & i{
+                color: #fff;
+                font-size: 60px;
+                display: inline-flex;
+            }
+        }
+    }
+}
+
+.tc-header-btn{
+    display: flex;
+}
+

@@ -1,0 +1,78 @@
+@use '../../utils' as *;
+
+
+.tc-newsletter{
+    &-margin{
+        margin-top: -110px;
+    }
+    &-bg{
+        padding: 80px;
+        border-radius: 20px;
+        @media #{$md}{
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        @media #{$xs}{
+           padding: 50px 25px;
+        }
+    }
+    &-box{
+        @media #{$lg}{
+            margin-top: 30px;
+        }
+        & form{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            @media #{$xs}{
+                display: block;
+            }
+        }
+        & input{
+            color: #fff;
+            border-color: #fff;
+            &:focus{
+                border-color: #fff;
+            }
+            @include tc-placeholder{
+                color: #fff;
+            }
+        }
+    }
+    &-input{
+        position: relative;
+        width: calc(100% - 175px);
+        @media #{$xs}{
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        & img{
+            top: 32px;
+            right: 15px;
+            position: absolute;
+        }
+    }
+    &-back-title{
+        margin: 0;
+        left: 100px;
+        opacity: .10;
+        bottom: -23px;
+        color: #fff;
+        line-height: 1;
+        font-size: 100px;
+        position: absolute;
+        @media #{$xl}{
+            font-size: 80px;
+            left: 40px;
+        }
+        @media #{$md}{
+            font-size: 75px;
+            left: 30px;
+        }
+    }
+}
+
+.tc-newsletter-input{
+
+}
+
