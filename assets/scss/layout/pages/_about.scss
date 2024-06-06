@@ -25,6 +25,31 @@
             }
         }
 }
+&-thumb{
+    & > img{
+        z-index: 2;
+        position: relative;
+    }
+}
+&-circle{
+    bottom: 0;
+    width: 615px;
+    height: 596px;
+    position: absolute;
+    border-radius: 100%;
+    background-color: var(--tc-theme-sec-color-3);
+}
+
+&-2-shape{
+    &-1{
+        top: 0;
+        right: 50px;
+    }
+    &-2{
+        left: -55px;
+        top: 140px;
+    }
+}
 }
 
 .tc-about-content{
@@ -67,4 +92,8 @@
     top: 50px;
     right: 0;
     z-index: 1;
+}
+
+.bg-radious{
+    border-radius: 357px;
 }

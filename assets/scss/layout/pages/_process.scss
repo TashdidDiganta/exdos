@@ -1,0 +1,44 @@
+@use '../../utils' as *;
+
+
+.tcprocess{
+    &_border{
+        border-radius: 166px;
+        border: 1px solid #57595C;
+    }
+    &__step{
+        & span{
+            color: #fff;
+            padding: 4px 24px;
+            border-radius: 30px;
+            background-color: var(--tc-theme-orange);
+        }
+    }
+
+    &_title{
+        font-size: 30px;
+    }
+    & p{
+        font-size: 20;
+    }
+
+    &__icon{
+        & span{
+            font-size: 85px;
+            background: #ffe9c9;
+            width: 150px;
+            height: 150px;
+            display: inline-block;
+            text-align: center;
+            line-height: 175px;
+            border-radius: 100%;
+        }
+    }
+    &:hover{
+        & .tcprocess__step{
+            & span{
+                    background-color: var(--tc-theme-color);
+            }
+        }
+    }
+}

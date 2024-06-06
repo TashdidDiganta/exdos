@@ -70,4 +70,31 @@
     }
 }
 
+.tcproject{
+    &-bg{
+        padding: 20px;
+        background-color: #D6F0FF;
+    }
+    &__thumb{
+
+    }
+    &__title{
+        margin: 0;
+        font-size: 30px;
+    }
+    &__meta{
+        margin-bottom: 5px;
+        & span{
+            font-size: 15px;
+            color: #57595c;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.tc-project-active-margin{
+    margin: 0 -100px;
+}
+
 

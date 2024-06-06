@@ -2,6 +2,12 @@
 
 
 .tc-testimonial{
+    &-area{
+        background-repeat: no-repeat;
+    }
+    &-main-wrapper{
+        margin-left: -50px;
+    }
     &-desc{
         font-size: 100px;
         font-weight: 400;
@@ -16,6 +22,21 @@
         }
         @media #{$xs}{
             font-size: 35px;
+        }
+    }
+
+    &-text{
+        color: #fff; 
+        font-size: 61px;
+        font-weight: 400;
+        text-transform: uppercase;
+        & i{
+            font-size: 40px;
+            color: var(--tc-theme-sec-color);
+        }
+        &-black{
+            font-size: 40px;
+            color: #0A0E1A;
         }
     }
 
@@ -36,6 +57,34 @@
             background-color: var(--tc-body-color);
         }
     }
+
+    &-author{
+        &-name{
+            color: #fff;
+            font-size: 30px;
+            &-black{
+                color: #0A0E1A;
+            }
+        }
+        &-desig{
+            color: #fff;
+            font-size: 17px;
+            &-black{
+                font-size: 15px;
+                color: #57595c;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+
+
+.quotes{
+    font-size: 40px;
+    display: inline-block;
+    transform: scaleX(-1);
+    color: var(--tc-theme-sec-color);
 }
 
 .tc-testimonial-shape{
@@ -88,7 +137,8 @@
 
 
 
-.tc-testimonial-thumb{
+.tc-testimonial{
+    &-thumb{
     &-1{
         top: 22%;
         @media #{$xl}{
@@ -100,4 +150,79 @@
         top: 30px;
         right: -8px;
     }
+}
+&-2-thumb{
+    &-1{
+        right: 19%;
+        bottom: 15%;
+    }
+    &-2{
+        right:9%;
+        top: 19%;
+    }
+}
+}
+
+.tc-test-2-slider-arrow{
+    left: 40%;
+    bottom: 160px;
+    position: absolute;
+    & span{
+        width: 12px;
+        height: 12px;
+        margin: 0 10px;
+        color: #DBDBDB;
+        border-radius: 100%;
+        display: inline-block;
+    }
+}
+
+.tc-test-2-button{
+    z-index: 9;
+    color: #ffff;
+    font-size: 52px;
+    display: inline-block;
+}
+
+
+.tc-testimonial-bg-color{
+    position: absolute;
+    background: #ff8653;
+    width: 408px;
+    height: 380px;
+    bottom: 0;
+    z-index: -1;
+    border-radius: 180px 180px 80px 80px;
+}
+
+
+.tc-test-quote{
+    float: left;
+}
+
+.tc-testimonial-thumb-active{
+    & .swiper-slide{
+        transition: .3s;
+        & img{
+            transform: scale(.7);
+        }
+        &.swiper-slide-thumb-active{
+            & img{
+                transform: scale(1);
+            }
+        }
+    }
+}
+
+.tc-test-button{
+    & i{
+        transform: rotate(0deg);
+    }
+}
+
+.sep-line{
+    width: 1px;
+    height: 40px;
+    display: inline-block;
+    background-color: var(--tc-theme-red);
 }

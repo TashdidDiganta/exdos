@@ -38,7 +38,24 @@
                 color: #fff;
             }
         }
+        &-2{
+            & input{
+                color: #57595C;
+                border-color: #57595C;
+                &:focus{
+                    border-color: #57595C;
+                }
+                @include tc-placeholder{
+                    color: #57595C;
+                }
+            }
+            & .tc-newsletter-back-title{
+                opacity: 1;
+                color: #EEEBE6;
+            }
+        }
     }
+
     &-input{
         position: relative;
         width: calc(100% - 175px);
@@ -50,6 +67,12 @@
             top: 32px;
             right: 15px;
             position: absolute;
+        }
+        & i{
+            top: 32px;
+            right: 15px;
+            position: absolute;
+            color: #57595C;
         }
     }
     &-back-title{

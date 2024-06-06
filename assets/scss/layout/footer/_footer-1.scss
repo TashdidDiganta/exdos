@@ -48,8 +48,9 @@
             color: #B1B4BA;
         }
         & h4{
-            font-size: 30px;
             color: #fff;
+            font-size: 30px;
+            font-weight: 400;
             @media #{$xl}{
                 font-size: 25px;
             }
@@ -106,6 +107,13 @@
 
 .tc-footer-copyright-area{
     & .tc-footer-copyright{
+        &-white{
+            & p{
+                & a{
+                    color: red;
+                }
+            }
+        }
         & p{
             font-size: 17px;
             color: #B1B4BA;

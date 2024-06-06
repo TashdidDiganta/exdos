@@ -312,11 +312,13 @@ textarea{
 
 *::-moz-placeholder {
 	color: var(--tc-common-black);
-	font-size: 14px;
+	font-size: 15px;
 	opacity: 1;
+	font-weight: 500;
 }
 *::placeholder {
 	color: var(--tc-common-black);
-	font-size: 14px;
+	font-size: 15px;
 	opacity: 1;
+	font-weight: 500;
 }

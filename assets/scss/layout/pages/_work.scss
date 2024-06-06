@@ -1,0 +1,64 @@
+@use '../../utils' as *;
+
+
+.tc-work{
+    &-item{
+        margin-left: -12px;
+    }
+    &-content{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+    &-icon{
+        width: 260px;
+        background-color: rgb(255, 233, 201);
+        height: 260px;
+        line-height: 260px;
+        border-radius: 100%;
+        & i{
+            font-size: 140px;
+            transform: translateY(23%);
+        }
+
+        &-2{
+            & i{
+                transform: translateY(64%);
+            }
+        }
+
+    }
+    &-number{
+        left: 39%;
+        bottom: -26px;
+        position: absolute;
+        & h3{
+            color: #fff;
+            font-size: 30px;
+            font-weight: 400;
+            border-radius: 50%;
+            padding: 10px 15px;
+            display: inline-block;
+            border: 10px solid #fff;
+            background-color: var(--tc-theme-red);
+        }
+        &-2{
+            top: -25px;
+            & h3{
+                padding: 10px 11px;
+            }
+        }
+        &-3{
+            & h3{
+                padding: 10px 11px;
+            }
+        }
+    }
+
+    &-bg-shape{
+        top: -28px;
+        &-2{
+            bottom: -38px;
+        }
+    }
+}

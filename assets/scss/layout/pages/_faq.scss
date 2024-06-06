@@ -1,0 +1,63 @@
+@use '../../utils' as *;
+
+.tc-faq-wrapper{
+    padding: 20px 0px;
+}
+
+.tc-accordion{
+    &-item{
+        border-radius: 10px;
+        border: 1px solid #57595c;
+    }
+    &-button {
+        width: 100%;
+        font-size: 20px;
+        color: #0a0e1a;
+        text-align: start;
+        padding: 22px 30px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &-body{
+        margin: 0px 30px;
+        padding-top: 30px;
+        border-top: 1px solid #57595c;
+    }
+}
+
+.tcfaq-bg{
+    display: inline-block;
+    left: 0;
+    height: 100%;
+    position: absolute;
+    width: calc(50% - 60px);
+    background-size: cover;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.tc-faq{
+    &-button{
+        width: 100%;
+        font-size: 24px;
+        text-align: left;
+        padding-top: 0px;
+        padding-bottom: 20px;
+        display: inline-block;
+        border-bottom: 1px solid transparent;
+        &::after{
+            content: "-";
+        }
+        &.collapsed{
+            margin-bottom: 20px;
+            border-bottom: 1px solid #D9D9D9;
+            &::after{
+                content: "+";
+            }
+        }
+    }
+    &-thumb{
+        & img{
+            max-width: inherit;
+        }
+    }
+}

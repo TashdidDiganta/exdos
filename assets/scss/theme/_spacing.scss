@@ -12,7 +12,7 @@
     .mb-#{1 * $i}{margin-bottom: 1px *$i;}
 }
 /*-- Margin Left --*/
-@for $i from 1 through 100 {
+@for $i from 1 through 500 {
     .ml-#{1 * $i}{margin-left: 1px * $i;}
 }
 

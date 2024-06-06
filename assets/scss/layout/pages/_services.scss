@@ -8,8 +8,16 @@
         padding: 40px 30px;
     }
     &__icon{
-        & i{
+        & span{
+            z-index: 2;
             font-size: 105px;
+            position: relative;
+        }
+
+        &-shape{
+            left: 0;
+            top: -6px;
+            z-index: 1;
         }
     }
     &__text{
@@ -44,8 +52,29 @@
             background-color: var(--tc-theme-color);
         }
     }
+
+    &-2{
+        margin-top: -1px;
+        padding-bottom: 14px;
+        .tcservices__icon {
+            & span{
+                font-size: 57px;
+                margin-left: 25px;
+            }
+        }  
+    }
 }
 
+
+.tcservices__icon_btn{
+    & a{
+        font-size: 45px;
+        display: inline-flex;
+        &:hover{
+            color: var(--tc-theme-orange);
+        }
+    }
+}
 
 
 .tc-sv-btn{
@@ -61,4 +90,11 @@
     & i{
         transform: rotate(-40deg);
     }
+}
+
+.tcservices-space{
+    padding-top: 50px;
+    margin-bottom: 20px;
+    border: none;
+    background-color: #fff;
 }

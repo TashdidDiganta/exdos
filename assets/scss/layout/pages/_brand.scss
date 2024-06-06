@@ -1,0 +1,30 @@
+@use '../../utils' as *;
+
+
+.tc-brand{
+    &-title{
+        & h2{
+            margin: 0;
+            color: #fff;
+            font-size: 100px;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.bg{
+    background: rgb(0,88,255);
+    background: radial-gradient(circle, rgba(0,88,255,1) 35%, rgba(255,76,0,1) 100%);
+}
+
+
+.tc-brand-item-border{
+    display: flex;
+    min-height: 125px;
+    margin-right: -1px;
+    margin-bottom: -1px;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: center;
+    border: 1px solid #57595c;
+}

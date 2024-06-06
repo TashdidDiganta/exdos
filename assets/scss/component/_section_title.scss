@@ -12,10 +12,20 @@
             height: 10px;
             border-radius: 50px;
             background-color: #0057FC;
+            &.sub-dots{
+                background-color: #FF5B15;
+            }
+            &.sub-dots-2{
+                background-color: var(--tc-theme-red);
+            }
+        }
+        &-white{
+            color: #A3AEC3;
         }
     }
     &-title{
         font-size: 60px;
+        font-weight: 400;
         &-white{
             color: #fff;
         }
@@ -43,6 +53,12 @@
                     }
                 }
             }
+        }
+    }
+    &-title-content-white{
+        color: #A3AEC3;
+        & b{
+            color: #fff;
         }
     }
 }
