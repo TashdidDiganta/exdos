@@ -24,6 +24,9 @@
     margin-left: -40px;
     & img{
         max-width: inherit;
+        @media #{$xl,$lg,$md,$xs}{
+            width: 100%;
+        }
     }
 }
 

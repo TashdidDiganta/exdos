@@ -54,11 +54,18 @@
                 }
             }
         }
+     
     }
     &-title-content-white{
         color: #A3AEC3;
         & b{
             color: #fff;
         }
+    }
+}
+
+.xxlm-title{
+    @media #{$xxlm}{
+        font-size: 50px;
     }
 }

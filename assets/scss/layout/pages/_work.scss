@@ -18,12 +18,14 @@
         border-radius: 100%;
         & i{
             font-size: 140px;
-            transform: translateY(23%);
+            @include transform( translateY(23%));
+
         }
 
         &-2{
             & i{
-                transform: translateY(64%);
+                @include transform(translateY(64%));
+
             }
         }
 
@@ -60,5 +62,12 @@
         &-2{
             bottom: -38px;
         }
+    }
+}
+
+.tc-work-text{
+    @media #{$xs}{
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 }

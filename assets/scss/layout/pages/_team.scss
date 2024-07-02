@@ -79,7 +79,7 @@
             right: 0;
             top: 55%;
             opacity: 0;
-            transition: .3s;
+            @include  transition(.3s);
             position: absolute;
             visibility: hidden;
             transform: translateY(-50%);

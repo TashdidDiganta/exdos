@@ -14,18 +14,18 @@
 <body>
      <!--===== Header Area Start =====-->
      <header>
-        <div class="tc-header-area tc-transparent-header pl-100">
+        <div class="tc-header-area tc-transparent-header tc-header-space tc-header-space-5 pl-100">
             <div class="container-fluid p-0">
                 <div class="row align-items-center gx-0">
-                    <div class="col-xl-2 col-lg-5 col-md-4 col-6">
+                    <div class="col-xl-2 col-lg-7 col-6">
                         <div class="tc-logo">
                             <a href="index.html"><img src="assets/img/black-logo.png" alt=""></a>
                         </div>
                     </div>
-                    <div class="col-xl-7 col-lg-7 col-md-8 col-6">
+                    <div class="col-xl-7 col-lg-7 col-md-8 col-6 d-none d-xl-block">
                         <div class="tc-header-box d-flex justify-content-xl-between justify-content-end ml-10">
                             <div class="tc-main-menu tc-main-menu-3 d-xl-block d-none ">
-                                <nav>
+                                <nav class="td-mobile-menu-active">
                                     <ul>
                                         <li><a href="index.html">Home</a>
                                             <ul class="sub-menu">
@@ -46,7 +46,6 @@
                                         </li>
                                         <li><a href="#">About Us</a></li>
                                         <li><a href="#">Service</a></li>
-                                        <li><a href="#">Portfolio</a></li>
                                         <li><a href="#">Pages</a></li>
                                         <li><a href="#">Blog</a></li>
                                         <li><a href="#">Contact</a></li>                                                     
@@ -55,8 +54,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3">
-                        <div class="tc-header-right tc-header-right-black d-flex justify-content-end flex-wrap align-items-center pr-100">
+                    <div class="col-xl-3 col-lg-5 col-6">
+                        <div class="tc-header-right tc-header-right-black d-flex justify-content-end tc-header-right-pr flex-wrap align-items-center pr-100">
                             <div class="tc-header-search d-flex align-items-center d-md-flexs">
                                 <button>
                                     <i class="flaticon-search"></i>
@@ -64,7 +63,7 @@
                             </div>
                             <span class="sep-vr sep-vr-2"></span>
                             <div class="tc-header-btn tc-header-menu-icon ml-30">
-                                <a href="#"><i class="fal fa-bars"></i></a>
+                                <a href="#" class="offcanvas-toogle"><i class="fal fa-bars"></i></a>
                             </div>
                         </div>
                     </div>
@@ -73,17 +72,60 @@
         </div>
     </header> 
     <!--===== Header Area End =====-->
+
+    
+    <!-- offcanvs start-->
+    <div class="td-offcanvas">
+        <div class="td-offcanvas-wrapper">
+            <div class="td-offcanvas-header d-flex justify-content-between align-items-center mb-40">
+                <div class="td-offcanvas-header-logo">
+                    <a href="index.html"><img src="assets/img/black-logo.png" alt=""></a>
+                </div>
+                <div class="td-offcanvas-header-close">
+                    <button class="td-offcanvas-close-toggle"><i class="fal fa-times"></i></button>
+                </div>
+            </div>
+            <div class="td-offcanvas-menu d-xl-none d-lg-block">
+                <nav></nav>
+            </div>
+            <div class="td-offcanvas-content mb-40">
+                <h2 class="td-offcanvas-title">Hello There!</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, animi quod. Iste laborum atque quidem facilis! Ratione harum quo iure!</p>
+            </div>
+            <div class="td-offcanvas-gallery mb-40">
+                <a class="popup-image" href="assets/img/home05/showcase/showcase-thumb01.jpg"><img src="assets/img/home05/showcase/showcase-thumb01.jpg" alt=""></a>
+                <a class="popup-image" href="assets/img/home05/showcase/showcase-thumb02.jpg"><img src="assets/img/home05/showcase/showcase-thumb02.jpg" alt=""></a>
+                <a class="popup-image" href="assets/img/home05/showcase/showcase-thumb03.jpg"><img src="assets/img/home05/showcase/showcase-thumb03.jpg" alt=""></a>
+                <a class="popup-image" href="assets/img/home05/showcase/showcase-thumb04.jpg"><img src="assets/img/home05/showcase/showcase-thumb04.jpg" alt=""></a>
+            </div>
+            <div class="td-offcanvas-info mb-40">
+                <h3 class="td-offcanvas-sm-title">Information</h3>
+                <span><a href="#">+4 20 7700 1007</a></span>
+                <span><a href="#">hello@exdos.com</a></span>
+                <span><a href="#">Avenue de Roma 158b, Lisbon</a></span>
+            </div>
+            <div class="td-offcanvas-social">
+                <h3 class="td-offcanvas-sm-title">Follow Us</h3>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        </div>
+    <!-- offcanvs end-->
+        <div class="td-offcanvas-overlay"></div>
     <main>
         <!--===== Hero Area Start =====-->
         <section class="tc-hero-area p-relative tc-hero-padding pt-240 pb-145 fix" >
             <div class="tc-hero-shape ">
-                <img class="tc-hero-5-shape-1 p-absolute" src="assets/img/home05/shape/hero01.png" alt="">
+                <img class="tc-hero-5-shape-1 p-absolute d-none d-xxl-block" src="assets/img/home05/shape/hero01.png" alt="">
                 <img class="tc-hero-5-shape-2 p-absolute d-none d-xl-block " src="assets/img/home05/shape/hero02.png" alt="">
                 <img class="tc-hero-5-shape-3 p-absolute d-none d-xl-block " src="assets/img/home05/shape/hero03.png" alt="">
                 <img class="tc-hero-5-shape-4 p-absolute d-none d-md-block " src="assets/img/home05/shape/hero04.png" alt="">
                 <img class="tc-hero-5-shape-5 p-absolute d-none d-md-block" src="assets/img/home05/shape/hero05.png" alt="">
             </div>
-            <div class="tc-hero-img-5 p-absolute">
+            <div class="tc-hero-img-5 p-absolute text-end">
                 <img src="assets/img/home05/bg/hero-img.png" alt="">
             </div>
             <div class="hero-info hero-info-2 d-none d-xxl-block  justify-content-between ">
@@ -105,7 +147,7 @@
                     <div class="tc-hero-black-content tc-hero-black-content-2">
                         <p>Life you under itself greater. Land the fill make so land waters fly beast and stars don't void first medal score</p>
                     </div>
-                     <div class="d-flex">
+                     <div class="d-flex mt-40 flex-wrap">
                          <a href="#" class="tc-btn-ter tc-btn-ter-red">Discover More<i class="fal fa-arrow-right"></i></a>
                          <div class="tc-pilot ml-30">
                             <h3>4.0 - Trustscore</h3>
@@ -117,7 +159,7 @@
         </section>
         <!--===== Hero Area End =====-->
 
-        <!--===== About Area Start =====-->
+        <!--===== Testimonial Area Start =====-->
         <section class="tc-testimonial-area pb-130 pt-130 br-140">
             <div class="container">
                 <div class="tc-section-title-wrapper text-center mb-35">
@@ -129,12 +171,12 @@
                             <div class="swiper tc-testimonial-content-active">
                                 <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <div class="tc-testimonial-item pl-95 pr-95">
-                                        <div class="tc-testimonial-long-text d-flex">
-                                            <h3 class="tc-testimonial-text tc-testimonial-text-black">Own divided i so yielding dry don't
-                                                Third image fourth moving first is bring
-                                               blessed good. Said Bring created subdue him
-                                               Heaven. Under can't make night rule two
+                                    <div class="tc-testimonial-item ">
+                                        <div class="tc-testimonial-long-text d-flex ">
+                                            <h3 class="tc-testimonial-text tc-testimonial-text-black tc-testimonial-text-br">Own divided i so yielding dry don't <br>
+                                                Third image fourth moving first is bring <br>
+                                               blessed good. Said Bring created subdue him <br>
+                                               Heaven. Under can't make night rule two <br>
                                                Abundantly whales.</h3>
                                         </div>
                                     </div>
@@ -153,35 +195,35 @@
                 </div>
             </div>
         </section>
-        <!--===== About Area End =====-->
+        <!--===== Testimonial Area End =====-->
 
-        <!--===== About Area Start =====-->
-        <section class="tc-service-area pb-110 fix">
+        <!--===== Service Area Start =====-->
+        <section class="tc-service-area tc-service-space pb-110 fix">
             <div class="about-fact mr-40">
                 <div class="row justify-content-end">
-                    <div class="col-xl-3">
+                    <div class="col-xl-3 col-lg-6 col-md-6">
                         <div class="tcfact tcfact-2 text-center d-flex align-items-center mb-40 ml-15">
-                            <div class="tcfact__icon tcfact__icon-2 mr-25 pr-25">
+                            <div class="tcfact__icon tcfact__icon-2 xl-space mr-25 pr-25">
                                 <span>
                                     <i class="flaticon-customer-feedback"></i>
                                 </span>
                             </div>
                             <div class="tcfact__text text-start">
                                 <span>29k</span>
-                                <h4 class="tcfact__title mb-30">Happy Customers</h4>
+                                <h4 class="tcfact__title xl-title mb-30">Happy Customers</h4>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3">
+                    <div class="col-xl-3 col-lg-6 col-md-6">
                         <div class="tcfact tcfact-2 text-center d-flex align-items-center mb-40">
-                            <div class="tcfact__icon tcfact__icon-2 mr-25 pr-25">
+                            <div class="tcfact__icon tcfact__icon-2 xl-space mr-25 pr-25">
                                 <span>
                                     <i class="flaticon-solution"></i>
                                 </span>
                             </div>
                             <div class="tcfact__text text-start">
                                 <span>5k+</span>
-                                <h4 class="tcfact__title mb-30">Project Completed</h4>
+                                <h4 class="tcfact__title xl-title mb-30">Project Completed</h4>
                             </div>
                         </div>
                     </div>
@@ -189,33 +231,33 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-5">
+                    <div class="col-lg-7 col-md-12">
                         <div class="tc-section-title-wrapper mb-40">
                             <span class="tc-section-subtitle mb-10"><i class="sub-dots"></i> get service now</span>
-                            <h2 class="tc-section-title tc-section-title-3 tc-upper mb-42">exceptional
+                            <h2 class="tc-section-title tc-section-title-3 xl-title tc-upper mb-42">exceptional
                                 business need
                                 creative &
                                 unique design</h2>
                         </div>
                         <div class="tc-about-content">
                             <p>Per ipsum ultrices sollicitud platea facilisi Semper aliquam up tacits senectus cursus vivamu volutpat penatibus fringilla porttitor do  magna purus massa per duis dapibus scelerisqu divice fred etiam</p>
-                            <div class="tc-about-btn mt-50 mb-130">
+                            <div class="tc-about-btn tc-about-btn-space mt-50 mb-130">
                                 <a href="#" class="tc-btn-ter tc-btn-ter-red">get started<i class="fal fa-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="tc-faq-thumb ml-75">
+                    <div class="col-lg-5 col-md-12">
+                        <div class="tc-faq-thumb ml-75 p-absolute">
                             <img src="assets/img/home05/about/about.jpg" alt="">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!--===== About Area End =====-->
+        <!--===== Service Area End =====-->
 
         <!--===== Work Area Start =====-->
-        <section class="tc-work-area">
+        <section class="tc-work-area pt-95 pb-95">
             <div class="container">
                 <div class="tc-section-title-wrapper text-center mb-50">
                     <span class="tc-section-subtitle mb-10"><i class="sub-dots-2"></i> Working process</span>
@@ -223,13 +265,13 @@
                 </div>
                 <div class="tc-work-wrapper">
                     <div class="row g-0">
-                        <div class="col-xl-3">
+                        <div class="col-xl-3 col-lg-6 col-md-6">
                             <div class="tc-work-item text-center">
-                                <div class="tc-work-top-icon mb-100 mt-35">
+                                <div class="tc-work-top-icon d-md-block d-none mb-100 mt-35">
                                     <img src="assets/img/home05/shape/work-shape1.2.png" alt="">
                                 </div>
-                                <div class="tc-work-content p-relative"  >
-                                    <div class="tc-work-bg-shape p-absolute">
+                                <div class="tc-work-content p-relative">
+                                    <div class="tc-work-bg-shape d-none d-xxl-block p-absolute">
                                         <img src="assets/img/home05/shape/work-shape1.1.png" alt="">
                                     </div>
                                     <div class="tc-work-icon" data-bg-color="#FFE9C9">
@@ -239,20 +281,20 @@
                                         <h3>01</h3>
                                     </div>
                                 </div>
-                                <div class="tc-work-text text-start mt-75">
+                                <div class="tc-work-text text-md-start text-center mt-75 mb-40">
                                     <h3 class="tcservices__title mb-20">Free Signup</h3>
                                     <p>Said moved fruit are not unto forth years the brought kind herbs for under fort with may creepeth to delisa.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-3">
+                        <div class="col-xl-3 col-lg-6 col-md-6">
                             <div class="tc-work-item text-center">
-                                <div class="tc-work-text text-start mb-65">
+                                <div class="tc-work-text text-start mb-65 d-md-block d-none">
                                     <h3 class="tcservices__title mb-20">Free Signup</h3>
                                     <p>Said moved fruit are not unto forth years the brought kind herbs for under fort with may creepeth to delisa.</p>
                                 </div>
                                 <div class="tc-work-content p-relative"  >
-                                    <div class="tc-work-bg-shape-2 p-absolute">
+                                    <div class="tc-work-bg-shape-2 d-none d-xxl-block p-absolute">
                                         <img src="assets/img/home05/shape/work-shape2.1.png" alt="">
                                     </div>
                                     <div class="tc-work-number tc-work-number-2">
@@ -262,18 +304,22 @@
                                         <i class="flaticon-triangle"></i>
                                     </div>
                                 </div>
-                                <div class="tc-work-top-icon mt-100">
+                                <div class="tc-work-text text-start d-md-none mb-60 text-center mt-20">
+                                    <h3 class="tcservices__title mb-20">Free Signup</h3>
+                                    <p>Said moved fruit are not unto forth years the brought kind herbs for under fort with may creepeth to delisa.</p>
+                                </div>
+                                <div class="tc-work-top-icon d-md-block d-none mt-100">
                                     <img src="assets/img/home05/shape/work-shape1.2.png" alt="">
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-3">
+                        <div class="col-xl-3 col-lg-6 col-md-6">
                             <div class="tc-work-item text-center">
-                                <div class="tc-work-top-icon mb-100 mt-35">
-                                    <img src="assets/img/home05/shape/work-shape1.2.png" alt="">
+                                <div class="tc-work-top-icon d-md-block d-none mb-100 mt-35">
+                                    <img src="assets/img/home05/shape/work-shape1.3.png" alt="">
                                 </div>
                                 <div class="tc-work-content p-relative"  >
-                                    <div class="tc-work-bg-shape p-absolute">
+                                    <div class="tc-work-bg-shape d-none d-xxl-block p-absolute">
                                         <img src="assets/img/home05/shape/work-shape3.1.png" alt="">
                                     </div>
                                     <div class="tc-work-icon" data-bg-color="#FFE4FB">
@@ -283,20 +329,20 @@
                                         <h3>03</h3>
                                     </div>
                                 </div>
-                                <div class="tc-work-text text-start mt-75">
+                                <div class="tc-work-text text-start mt-75 text-center text-md-start mb-40">
                                     <h3 class="tcservices__title mb-20">Free Signup</h3>
                                     <p>Said moved fruit are not unto forth years the brought kind herbs for under fort with may creepeth to delisa.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-3">
+                        <div class="col-xl-3 col-lg-6 col-md-6">
                             <div class="tc-work-item text-center">
-                                <div class="tc-work-text text-start mb-60">
+                                <div class="tc-work-text text-start mb-60 d-md-block d-none">
                                     <h3 class="tcservices__title mb-20">Free Signup</h3>
                                     <p>Said moved fruit are not unto forth years the brought kind herbs for under fort with may creepeth to delisa.</p>
                                 </div>
                                 <div class="tc-work-content p-relative"  >
-                                    <div class="tc-work-bg-shape-2 p-absolute">
+                                    <div class="tc-work-bg-shape-2 d-none d-xxl-block p-absolute">
                                         <img src="assets/img/home05/shape/work-shape4.1.png" alt="">
                                     </div>
                                     <div class="tc-work-number tc-work-number-2">
@@ -306,8 +352,12 @@
                                         <i class="flaticon-3d-shapes"></i>
                                     </div>
                                 </div>
-                                <div class="tc-work-top-icon mt-100">
-                                    <img src="assets/img/home05/shape/work-shape1.2.png" alt="">
+                                <div class="tc-work-text text-start d-md-none mb-60 text-center mt-20">
+                                    <h3 class="tcservices__title mb-20">Free Signup</h3>
+                                    <p>Said moved fruit are not unto forth years the brought kind herbs for under fort with may creepeth to delisa.</p>
+                                </div>
+                                <div class="tc-work-top-icon d-md-block d-none mt-100">
+                                    <img src="assets/img/home05/shape/work-shape1.3.png" alt="">
                                 </div>
                             </div>
                         </div>
@@ -317,112 +367,228 @@
         </section>
         <!--===== Work Area End =====-->
 
-
-
-        <!--===== Services Area Start =====-->
-        <section class="tc-service-area pb-130 pt-130">
+        <!--===== Services 2 Area Start =====-->
+        <section class="tc-service-two-area pb-130 pt-130 plr" data-bg-color="#0A0E1A">
             <div class="container">
-                <div class="tc-section-title-wrapper text-center mb-45">
-                    <span class="tc-section-subtitle mb-10"><i class="sub-dots"></i> popular services</span>
-                    <h2 class="tc-section-title tc-section-title-3 tc-upper mb-42">what we provide</h2>
-                </div>
                 <div class="row">
-                    <div class="col-xl-3">
-                        <div class="tcservices tcservices-2 br-24">
-                            <div class="tcservices__icon mb-20">
-                                <span class="m-0"><img src="assets/img/home04/icon/service-icon-01.png" alt=""></span>
+                    <div class="col-lg-9">
+                        <div class="tc-section-title-wrapper">
+                            <span class="tc-section-subtitle mb-10"><i class="sub-dots"></i> popular services</span>
+                            <h2 class="tc-section-title tc-section-title-white tc-upper mb-10">Luxurious Designs for the
+                                Lasting Impression</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-end">
+                    <div class="col-lg-6">
+                        <p data-color="#B1B4BA">Per ipsum ultrices sollicitud platea facilisi semper aliquam up tacits senectus cursus for vivamu volutpat penatibus fringilla porttitor do magna purus massa duis dapibus over the fascinating scelerisqu</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row flex-column-reverse flex-lg-row">
+                <div class="col-xl-6 col-lg-6">
+                    <div class="tc-project-tab-content text-end">
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                                <div class="tc-project-tab-thumb">
+                                    <img src="assets/img/home05/bg/service-img.jpg" alt="">
+                                </div>
                             </div>
-                            <div class="tcservices__text">
-                                <h3 class="tcservices__title mb-20">Search Engine
-                                    Optimazation</h3>
-                                <p>Perfs so ultrices sollicitudin iaculis platea facilis</p>
-                                <div class="tcservices__icon_btn mt-20">
-                                    <a href="#"> <i class="flaticon-next-button"></i></a>
+                            <div class="tab-pane fade" id="digital-tab-pane" role="tabpanel" aria-labelledby="digital-tab" tabindex="0">
+                                <div class="tc-project-tab-thumb">
+                                    <img src="assets/img/home05/bg/service-img.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="printing-tab-pane" role="tabpanel" aria-labelledby="printing-tab" tabindex="0">
+                                <div class="tc-project-tab-thumb">
+                                    <img src="assets/img/home05/bg/service-img.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="interior-tab-pane" role="tabpanel" aria-labelledby="interior-tab" tabindex="0">
+                                <div class="tc-project-tab-thumb">
+                                    <img src="assets/img/home05/bg/service-img.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="web-tab-pane" role="tabpanel" aria-labelledby="web-tab" tabindex="0">
+                                <div class="tc-project-tab-thumb">
+                                    <img src="assets/img/home05/bg/service-img.jpg" alt="">
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3">
-                        <div class="tcservices tcservices-2 br-24">
-                            <div class="tcservices__icon mb-20">
-                                <span class="m-0"><img src="assets/img/home04/icon/service-icon-02.png" alt=""></span>
-                            </div>
-                            <div class="tcservices__text">
-                                <h3 class="tcservices__title mb-20">UX/UI Design
-                                    Services</h3>
-                                <p>Perfs so ultrices sollicitudin iaculis platea facilis</p>
-                                <div class="tcservices__icon_btn mt-20">
-                                    <a href="#"> <i class="flaticon-next-button"></i></a>
+                </div>
+                <div class="col-xl-6 col-lg-6">
+                    <div class="tc-project-tab-wrapper pl-45">
+                        <ul class="tc-project-tab tc-service-2-tab" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                              <div class="nav-links active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
+                                    <div class="tcsertab d-flex">
+                                        <div class="tcsertab__num mr-10  tc-text-white">
+                                            (01)
+                                        </div>
+                                        <div class="tcsertab__content">
+                                            <h3 class="tcsertab__title tc-text-white tc-upper">Brand design</h3>
+                                            <p>Sollicitud platea facilise semper aliquam over</p>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3">
-                        <div class="tcservices tcservices-2 br-24">
-                            <div class="tcservices__icon mb-20">
-                                <span class="m-0"><img src="assets/img/home04/icon/service-icon-03.png" alt=""></span>
-                            </div>
-                            <div class="tcservices__text">
-                                <h3 class="tcservices__title mb-20">Content Writing
-                                    Services</h3>
-                                <p>Perfs so ultrices sollicitudin iaculis platea facilis</p>
-                                <div class="tcservices__icon_btn mt-20">
-                                    <a href="#"> <i class="flaticon-next-button"></i></a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <div class="nav-links tc-text-white" id="digital-tab" data-bs-toggle="tab" data-bs-target="#digital-tab-pane" type="button" role="tab" aria-controls="digital-tab-pane" aria-selected="false">
+                                <div class="tcsertab d-flex">
+                                    <div class="tcsertab__num mr-10  tc-text-white">
+                                        (02)
+                                    </div>
+                                    <div class="tcsertab__content">
+                                        <h3 class="tcsertab__title tc-text-white tc-upper">ux/ui design</h3>
+                                        <p>Sollicitud platea facilise semper aliquam over</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3">
-                        <div class="tcservices tcservices-2 br-24">
-                            <div class="tcservices__icon mb-20">
-                                <span class="m-0"><img src="assets/img/home04/icon/service-icon-04.png" alt=""></span>
-                            </div>
-                            <div class="tcservices__text">
-                                <h3 class="tcservices__title mb-20">Social Media
-                                    Marketing</h3>
-                                <p>Perfs so ultrices sollicitudin iaculis platea facilis</p>
-                                <div class="tcservices__icon_btn mt-20">
-                                    <a href="#"> <i class="flaticon-next-button"></i></a>
+                              </div>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <div class="nav-links tc-text-white" id="printing-tab" data-bs-toggle="tab" data-bs-target="#printing-tab-pane" type="button" role="tab" aria-controls="printing-tab-pane" aria-selected="false">
+                                <div class="tcsertab d-flex">
+                                    <div class="tcsertab__num mr-10  tc-text-white">
+                                        (03)
+                                    </div>
+                                    <div class="tcsertab__content">
+                                        <h3 class="tcsertab__title tc-text-white tc-upper">graphics</h3>
+                                        <p>Sollicitud platea facilise semper aliquam over</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
+                              </div>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <div class="nav-links tc-text-white" id="interior-tab" data-bs-toggle="tab" data-bs-target="#interior-tab-pane" type="button" role="tab" aria-controls="interior-tab-pane" aria-selected="false">
+                                    <div class="tcsertab d-flex">
+                                        <div class="tcsertab__num mr-10  tc-text-white">
+                                            (04)
+                                        </div>
+                                        <div class="tcsertab__content">
+                                            <h3 class="tcsertab__title tc-text-white tc-upper">products</h3>
+                                            <p>Sollicitud platea facilise semper aliquam over</p>
+                                        </div>
+                                    </div>
+                                </div>
+                              </li>
+                          </ul>
                     </div>
                 </div>
             </div>
         </section>
-        <!--===== Services Area End =====-->
+        <!--===== Services 2 Area End =====-->
 
-        <!--===== About Area Start =====-->
-        <section class="tc-about-area  pt-130 pb-135 p-relative ">
-            <div class="container-fluid pl-100 pr-100">
-                <div class="tc-cream-bg-3 bg-radious pt-115">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="tc-about-thumb p-relative ml-60 mr-80 text-center">
-                                <img  src="assets/img/home04/about/about-img.png" alt="">
+        <!--===== Showcase Area Start =====-->
+        <section class="tc-showcase-area pt-130 pb-135">
+            <div class="container">
+                <div class="tc-section-title-wrapper mb-40">
+                    <span class="tc-section-subtitle mb-10"><i class="sub-dots"></i> recent showcase</span>
+                    <h2 class="tc-section-title tc-section-title-3 tc-upper mb-42">We create award winning <br>
+                        design projects</h2>
+                </div>
+                <div class="row g-0">
+                    <div class="col-lg-4">
+                        <div class="tcshowcase__logo tcshowcase__border d-flex justify-content-center align-items-center">
+                            <img src="assets/img/home05/showcase/showcase01.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="tcshowcase__border tcshowcase__content-box">
+                            <div class="row gx-0">
+                                <div class="col-lg-6">
+                                    <div class="tcshowcase pt-20">
+                                        <span class="tcshowcase__tag mb-20" data-bg-color="#FFE9C9">Branding</span>
+                                        <h3 class="tcshowcase__heading mb-30 tc-fs-40">Experience Digital
+                                            Marketing
+                                            Craftsmanship</h3>
+                                            <a href="#" class="tc-text-btn">Read More<i class="fal fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="tcshowcase__thumb mb-0 ">
+                                        <img src="assets/img/home05/showcase/showcase-thumb01.jpg" alt="">
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-md-5">
-                            <div class="tc-about-box">
-                                <div class="tc-section-title-wrapper mb-40">
-                                    <span class="tc-section-subtitle mb-10"><i class="sub-dots"></i> our company</span>
-                                    <h2 class="tc-section-title tc-section-title-3 tc-upper mb-42">Enjoy the power
-                                        of branding</h2>
+                    </div>
+                </div>
+                <div class="row g-0">
+                    <div class="col-lg-4">
+                        <div class="tcshowcase__logo tcshowcase__border d-flex justify-content-center align-items-center">
+                            <img src="assets/img/home05/showcase/showcase02.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="tcshowcase__border tcshowcase__content-box">
+                            <div class="row gx-0">
+                                <div class="col-lg-6">
+                                    <div class="tcshowcase pt-20">
+                                        <span class="tcshowcase__tag mb-20" data-bg-color="#D6F0FF">Branding</span>
+                                        <h3 class="tcshowcase__heading mb-30 tc-fs-40">Powerhouse of
+                                            Digital Marketing
+                                            best Solutions</h3>
+                                            <a href="#" class="tc-text-btn">Read More<i class="fal fa-arrow-right"></i></a>
+                                    </div>
                                 </div>
-                                <div class="tc-about-content">
-                                    <p>Per ipsum ultrices sollicitud platea facilisi Semper aliquam up tacits senectus cursus vivamu volutpat penatibus fringilla porttitor do  magna purus massa per duis dapibus scelerisqu divice fred etiam</p>
-                                    <ul>
-                                        <li><i class="fal fa-check"></i><span>Leading in ad innovation</span></li>
-                                        <li><i class="fal fa-check"></i><span>Pioneers in progressive advertising</span></li>
-                                    </ul>
-                                    <div class="tc-about-btn mt-50 mb-130">
-                                        <a href="#" class="tc-btn">
-                                            <div class="tc-btn-wrap">
-                                                <span class="tc-btn-y-1">Discover More</span>  
-                                                <span class="tc-btn-y-2">Discover More</span>  
-                                             </div>
-                                             <i></i>
-                                        </a>
+                                <div class="col-lg-6">
+                                    <div class="tcshowcase__thumb mb-0 text-end">
+                                        <img src="assets/img/home05/showcase/showcase-thumb02.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-0">
+                    <div class="col-lg-4">
+                        <div class="tcshowcase__logo tcshowcase__border d-flex justify-content-center align-items-center">
+                            <img src="assets/img/home05/showcase/showcase03.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="tcshowcase__border tcshowcase__content-box">
+                            <div class="row gx-0">
+                                <div class="col-lg-6">
+                                    <div class="tcshowcase pt-20">
+                                        <span class="tcshowcase__tag mb-20" data-bg-color="#FFE4FB">Branding</span>
+                                        <h3 class="tcshowcase__heading mb-30 tc-fs-40">creative Mobile
+                                            app design for the
+                                            molto bene</h3>
+                                            <a href="#" class="tc-text-btn">Read More<i class="fal fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="tcshowcase__thumb mb-0 text-end">
+                                        <img src="assets/img/home05/showcase/showcase-thumb03.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-0">
+                    <div class="col-lg-4">
+                        <div class="tcshowcase__logo tcshowcase__border d-flex justify-content-center align-items-center">
+                            <img src="assets/img/home05/showcase/showcase04.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="tcshowcase__border tcshowcase__content-box">
+                            <div class="row gx-0">
+                                <div class="col-lg-6">
+                                    <div class="tcshowcase pt-20">
+                                        <span class="tcshowcase__tag mb-20" data-bg-color="#E2EAD7">Branding</span>
+                                        <h3 class="tcshowcase__heading mb-30 tc-fs-40">Experience Digital
+                                            Marketing
+                                            Craftsmanship</h3>
+                                            <a href="#" class="tc-text-btn">Read More<i class="fal fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="tcshowcase__thumb mb-0 text-end">
+                                        <img src="assets/img/home05/showcase/showcase-thumb04.jpg" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -431,116 +597,130 @@
                 </div>
             </div>
         </section>
-        <!--===== About Area End =====-->
+        <!--===== Showcase Area End =====-->
 
-        <!--===== Project Area Start =====-->
-        <div class="tc-project-area pb-130 pt-130 fix">
+        <!--===== Testimonial Area Start =====-->
+        <div class="tc-project-area pb-130 pt-130 fix" data-background="assets/img/home05/bg/test-bg.png" data-bg-color="#F8F5FF">
             <div class="container">
                 <div class="row align-items-center ">
                     <div class="col-md-8">
                         <div class="tc-section-title-wrapper mb-40">
                             <span class="tc-section-subtitle mb-10"><i class="sub-dots"></i> recent showcase</span>
-                            <h2 class="tc-section-title tc-section-title-3 tc-upper mb-42">our latest project</h2>
+                            <h2 class="tc-section-title tc-section-title-3 tc-upper mb-42">happy customer says
+                                about service</h2>
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="tc-team-nav text-end d-flex justify-content-start justify-content-md-end align-items-center">
-                            <div class="tc-project-button-prev tc-team-button tc-rotate-icon"><i class="flaticon-right-arrow"></i></div>
+                        <div class="tc-review-btns text-end d-flex justify-content-start justify-content-md-end align-items-center">
+                            <div class="tc-test-5-left tc-review-btn tc-arrow-roted"><i class="flaticon-right-arrow"></i></div>
                             <span></span>
-                            <div class="tc-project-button-next tc-team-button"><i class="flaticon-right-arrow"></i></div>
+                            <div class="tc-test-5-right tc-review-btn"><i class="flaticon-right-arrow"></i></div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="container-fluid">
-                <div class="swiper tc-project-active tc-project-active-margin">
+                <div class="swiper tc-test-active tc-test-active-minus">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <div class="tcproject tcproject-bg br-20" data-bg-color="#FFE9C9">
-                                <div class="tcproject__thumb mb-30">
-                                    <img src="assets/img/home04/portfolio/project01.jpg" alt="">
+                            <div class="tctest">
+                                <div class="tctest__rating mb-20">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
                                 </div>
-                                <div class="tcproject__content d-flex justify-content-between align-items-center pl-30 pr-30 pb-15">
-                                    <div class="tcproject__text mr-10">
-                                        <div class="tcproject__meta">
-                                            <span>editing | design</span>
-                                        </div>
-                                        <h3 class="tcproject__title"><a href="#">Product design idea</a></h3>
+                                <p class="tc-fs-24">Fowel norman land gather our saying greater fifth thing appear may be risen stars multiply pot subdue waters lesser shall over</p>
+                                <div class="tctest__bio d-flex align-items-center">
+                                    <div class="tctest__quote mr-20" data-bg-color="#FFE9C9">
+                                        <img src="assets/img/home05/icon/test-icon.png" alt="">
                                     </div>
-                                    <div class="tcproject__link">
-                                        <a class="circle-icon-btn" href="#"><i class="far fa-arrow-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="tcproject tcproject-bg br-20" data-bg-color="#D6F0FF">
-                                <div class="tcproject__thumb mb-30">
-                                    <img src="assets/img/home04/portfolio/project02.jpg" alt="">
-                                </div>
-                                <div class="tcproject__content d-flex justify-content-between align-items-center pl-30 pr-30 pb-15">
-                                    <div class="tcproject__text mr-10">
-                                        <div class="tcproject__meta">
-                                            <span>editing | design</span>
-                                        </div>
-                                        <h3 class="tcproject__title"><a href="#">Website Analyzing</a></h3>
-                                    </div>
-                                    <div class="tcproject__link">
-                                        <a class="circle-icon-btn" href="#"><i class="far fa-arrow-right"></i></a>
+                                    <div class="tctest__buyer-info">
+                                        <h4 class="tctest__name tc-fs-24">Patrick Luna</h4>
+                                        <span class="tc-fs-15">Ceo of orion</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="tcproject tcproject-bg br-20" data-bg-color="#FFE4FB">
-                                <div class="tcproject__thumb mb-30">
-                                    <img src="assets/img/home04/portfolio/project03.jpg" alt="">
+                            <div class="tctest">
+                                <div class="tctest__rating mb-20">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
                                 </div>
-                                <div class="tcproject__content d-flex justify-content-between align-items-center pl-30 pr-30 pb-15">
-                                    <div class="tcproject__text mr-10">
-                                        <div class="tcproject__meta">
-                                            <span>editing | design</span>
-                                        </div>
-                                        <h3 class="tcproject__title"><a href="#">Product design idea</a></h3>
+                                <p class="tc-fs-24">Fowel norman land gather our saying greater fifth thing appear may be risen stars multiply pot subdue waters lesser shall over</p>
+                                <div class="tctest__bio d-flex align-items-center">
+                                    <div class="tctest__quote mr-20"  data-bg-color="#D6F0FF">
+                                        <img src="assets/img/home05/icon/test-icon.png" alt="">
                                     </div>
-                                    <div class="tcproject__link">
-                                        <a class="circle-icon-btn" href="#"><i class="far fa-arrow-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="tcproject tcproject-bg br-20" data-bg-color="#E2EAD7">
-                                <div class="tcproject__thumb mb-30">
-                                    <img src="assets/img/home04/portfolio/project04.jpg" alt="">
-                                </div>
-                                <div class="tcproject__content d-flex justify-content-between align-items-center pl-30 pr-30 pb-15">
-                                    <div class="tcproject__text mr-10">
-                                        <div class="tcproject__meta">
-                                            <span>editing | design</span>
-                                        </div>
-                                        <h3 class="tcproject__title"><a href="#">Mobile App Design</a></h3>
-                                    </div>
-                                    <div class="tcproject__link">
-                                        <a class="circle-icon-btn" href="#"><i class="far fa-arrow-right"></i></a>
+                                    <div class="tctest__buyer-info">
+                                        <h4 class="tctest__name tc-fs-24">Patrick Luna</h4>
+                                        <span class="tc-fs-15">Ceo of orion</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="tcproject tcproject-bg br-20"  data-bg-color="#FFE9C9">
-                                <div class="tcproject__thumb mb-30">
-                                    <img src="assets/img/home04/portfolio/project01.jpg" alt="">
+                            <div class="tctest">
+                                <div class="tctest__rating mb-20">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
                                 </div>
-                                <div class="tcproject__content d-flex justify-content-between align-items-center pl-30 pr-30 pb-15">
-                                    <div class="tcproject__text mr-10">
-                                        <div class="tcproject__meta">
-                                            <span>editing | design</span>
-                                        </div>
-                                        <h3 class="tcproject__title"><a href="#">Website Analyzing</a></h3>
+                                <p class="tc-fs-24">Fowel norman land gather our saying greater fifth thing appear may be risen stars multiply pot subdue waters lesser shall over</p>
+                                <div class="tctest__bio d-flex align-items-center">
+                                    <div class="tctest__quote mr-20"  data-bg-color="#FFE4FB">
+                                        <img src="assets/img/home05/icon/test-icon.png" alt="">
                                     </div>
-                                    <div class="tcproject__link">
-                                        <a class="circle-icon-btn" href="#"><i class="far fa-arrow-right"></i></a>
+                                    <div class="tctest__buyer-info">
+                                        <h4 class="tctest__name tc-fs-24">Patrick Luna</h4>
+                                        <span class="tc-fs-15">Ceo of orion</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="tctest">
+                                <div class="tctest__rating mb-20">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p class="tc-fs-24">Fowel norman land gather our saying greater fifth thing appear may be risen stars multiply pot subdue waters lesser shall over</p>
+                                <div class="tctest__bio d-flex">
+                                    <div class="tctest__quote mr-20"  data-bg-color="#E2EAD7">
+                                        <img src="assets/img/home05/icon/test-icon.png" alt="">
+                                    </div>
+                                    <div class="tctest__buyer-info align-items-center">
+                                        <h4 class="tctest__name tc-fs-24">Patrick Luna</h4>
+                                        <span class="tc-fs-15">Ceo of orion</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="tctest">
+                                <div class="tctest__rating mb-20">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p class="tc-fs-24">Fowel norman land gather our saying greater fifth thing appear may be risen stars multiply pot subdue waters lesser shall over</p>
+                                <div class="tctest__bio d-flex">
+                                    <div class="tctest__quote mr-20"  data-bg-color="#E2EAD7">
+                                        <img src="assets/img/home05/icon/test-icon.png" alt="">
+                                    </div>
+                                    <div class="tctest__buyer-info align-items-center">
+                                        <h4 class="tctest__name tc-fs-24">Patrick Luna</h4>
+                                        <span class="tc-fs-15">Ceo of orion</span>
                                     </div>
                                 </div>
                             </div>
@@ -549,491 +729,144 @@
                 </div>
             </div>
         </div>
-        <!--===== Project Area End =====-->
-
-        <!--===== Fact Area Start =====-->
-        <section class="tc-fact-area pb-50">
-           <div class="container">
-            <div class="tc-section-title-wrapper text-center mb-40">
-                <span class="tc-section-subtitle mb-10"><i class="sub-dots"></i> popular services</span>
-                <h2 class="tc-section-title tc-section-title-3 tc-upper mb-42">what we provide</h2>
-            </div>
-            <div class="row">
-                <div class="col-xl-4">
-                    <div class="tcfact tcfact-2 text-center d-flex align-items-center mb-40">
-                        <div class="tcfact__icon tcfact__icon-2 mr-25 pr-25">
-                            <span>
-                                <i class="flaticon-customer-feedback"></i>
-                            </span>
-                        </div>
-                        <div class="tcfact__text text-start">
-                            <span>29k</span>
-                            <h4 class="tcfact__title mb-30">Happy Customers</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4">
-                    <div class="tcfact tcfact-2 text-center d-flex align-items-center mb-40">
-                        <div class="tcfact__icon tcfact__icon-2 mr-25 pr-25">
-                            <span>
-                                <i class="flaticon-solution"></i>
-                            </span>
-                        </div>
-                        <div class="tcfact__text text-start">
-                            <span>5k+</span>
-                            <h4 class="tcfact__title mb-30">Project Completed</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4">
-                    <div class="tcfact tcfact-2 text-center d-flex align-items-center mb-40">
-                        <div class="tcfact__icon tcfact__icon-2 mr-25 pr-25">
-                            <span>
-                                <i class="flaticon-flag"></i>
-                            </span>
-                        </div>
-                        <div class="tcfact__text text-start">
-                            <span>50</span>
-                            <h4 class="tcfact__title mb-30">Countries Served</h4>
-                        </div>
-                    </div>
-                </div>
-               </div>
-           </div>
-        </section>
-        <!--===== Fact Area End =====-->
-
-        <!--===== Services Area Start =====-->
-        <section class="tc-service-area tc-service-bg pt-130 pb-110">
-            <div class="container">
-              <div class="row">
-                <div class="col-xl-6">
-                    <div class="tc-section-title-wrapper mb-40">
-                        <span class="tc-section-subtitle mb-10"><i class="sub-dots"></i> Our services</span>
-                        <h2 class="tc-section-title tc-section-title-3 tc-upper mb-42">future digital
-                            marketing service
-                            for business</h2>
-                    </div>
-                </div>
-                <div class="col-xl-3">
-                    <div class="tcservices tcservices-2 br-24 tcservices-space">
-                        <div class="tcservices__icon mb-20">
-                            <span class="m-0"><img src="assets/img/home04/icon/service-icon-01.png" alt=""></span>
-                        </div>
-                        <div class="tcservices__text">
-                            <h3 class="tcservices__title mb-20">Search Engine
-                                Optimazation</h3>
-                            <p>Perfs so ultrices sollicitudin iaculis platea facilis</p>
-                            <div class="tcservices__icon_btn mt-20">
-                                <a href="#"> <i class="flaticon-next-button"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3">
-                    <div class="tcservices tcservices-2 br-24 tcservices-space">
-                        <div class="tcservices__icon mb-20">
-                            <span class="m-0"><img src="assets/img/home04/icon/service-icon-02.png" alt=""></span>
-                        </div>
-                        <div class="tcservices__text">
-                            <h3 class="tcservices__title mb-20">UX/UI Design
-                                Services</h3>
-                            <p>Perfs so ultrices sollicitudin iaculis platea facilis</p>
-                            <div class="tcservices__icon_btn mt-20">
-                                <a href="#"> <i class="flaticon-next-button"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3">
-                    <div class="tcservices tcservices-2 br-24 tcservices-space">
-                        <div class="tcservices__icon mb-20">
-                            <span class="m-0"><img src="assets/img/home04/icon/service-icon-03.png" alt=""></span>
-                        </div>
-                        <div class="tcservices__text">
-                            <h3 class="tcservices__title mb-20">Content Writing
-                                Services</h3>
-                            <p>Perfs so ultrices sollicitudin iaculis platea facilis</p>
-                            <div class="tcservices__icon_btn mt-20">
-                                <a href="#"> <i class="flaticon-next-button"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3">
-                    <div class="tcservices tcservices-2 br-24 tcservices-space">
-                        <div class="tcservices__icon mb-20">
-                            <span class="m-0"><img src="assets/img/home04/icon/service-icon-04.png" alt=""></span>
-                        </div>
-                        <div class="tcservices__text">
-                            <h3 class="tcservices__title mb-20">Social Media
-                                Marketing</h3>
-                            <p>Perfs so ultrices sollicitudin iaculis platea facilis</p>
-                            <div class="tcservices__icon_btn mt-20">
-                                <a href="#"> <i class="flaticon-next-button"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3">
-                    <div class="tcservices tcservices-2 br-24 tcservices-space">
-                        <div class="tcservices__icon mb-20">
-                            <span class="m-0"><img src="assets/img/home04/icon/service-icon-05.png" alt=""></span>
-                        </div>
-                        <div class="tcservices__text">
-                            <h3 class="tcservices__title mb-20">Lead Generation
-                                Services</h3>
-                            <p>Perfs so ultrices sollicitudin iaculis platea facilis</p>
-                            <div class="tcservices__icon_btn mt-20">
-                                <a href="#"> <i class="flaticon-next-button"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3">
-                    <div class="tcservices tcservices-2 br-24 tcservices-space">
-                        <div class="tcservices__icon mb-20">
-                            <span class="m-0"><img src="assets/img/home04/icon/service-icon-06.png" alt=""></span>
-                        </div>
-                        <div class="tcservices__text">
-                            <h3 class="tcservices__title mb-20">E-Commerce
-                                Marketing</h3>
-                            <p>Perfs so ultrices sollicitudin iaculis platea facilis</p>
-                            <div class="tcservices__icon_btn mt-20">
-                                <a href="#"> <i class="flaticon-next-button"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-              </div>
-            </div>
-        </section>
-        <!--===== Services Area End =====-->
-
-        <!--===== Team Area Start =====-->
-        <section class="tc-team-area pr-80 pb-130 pt-90">
-            <div class="container">
-                <div class="tc-section-title-wrapper text-center mb-33">
-                    <span class="tc-section-subtitle mb-10"><i class="sub-dots"></i> dedicated team</span>
-                    <h2 class="tc-section-title tc-upper mb-42">our expert team</h2>
-                </div>
-                <div class="row">
-                    <div class="col-lg-3 col-md-6">
-                        <div class="tcteam text-center mb-40">
-                            <div class="tcteam__thumb mb-20 p-relative">
-                                <a href="#"><img class="mb-10" src="assets/img/home04/team/team01.png" alt=""></a>
-                                <div class="tcteam__thumb-bg p-absolute" data-bg-color="#FFE9C9"></div>
-                                <div class="tcteam__thumb-bg-border p-absolute"></div>
-                                <div class="tcteam__social-2">
-                                    <a href="#"><i class="fab fa-behance"></i></a>
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                    <a href="#"><i class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                            <div class="tcteam__info">
-                                <h3 class="tcteam__title">Malisa Murray</h3>
-                                <span class="tcteam__subtitle">Senior Designer</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="tcteam text-center mb-40">
-                            <div class="tcteam__thumb mb-20 p-relative">
-                                <a href="#"><img class="mb-10" src="assets/img/home04/team/team02.png" alt=""></a>
-                                <div class="tcteam__thumb-bg p-absolute" data-bg-color="#D6F0FF"></div>
-                                <div class="tcteam__thumb-bg-border p-absolute"></div>
-                                <div class="tcteam__social-2">
-                                    <a href="#"><i class="fab fa-behance"></i></a>
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                    <a href="#"><i class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                            <div class="tcteam__info">
-                                <h3 class="tcteam__title">Marks Colligan</h3>
-                                <span class="tcteam__subtitle">Project Manager</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="tcteam text-center mb-40">
-                            <div class="tcteam__thumb mb-20 p-relative">
-                                <a href="#"><img class="mb-10" src="assets/img/home04/team/team03.png" alt=""></a>
-                                <div class="tcteam__thumb-bg p-absolute" data-bg-color="#FFE4FB"></div>
-                                <div class="tcteam__thumb-bg-border p-absolute"></div>
-                                <div class="tcteam__social-2">
-                                    <a href="#"><i class="fab fa-behance"></i></a>
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                    <a href="#"><i class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                            <div class="tcteam__info">
-                                <h3 class="tcteam__title">Marks Colligan</h3>
-                                <span class="tcteam__subtitle">Project Manager</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="tcteam text-center mb-40">
-                            <div class="tcteam__thumb mb-20 p-relative">
-                                <a href="#"><img class="mb-10" src="assets/img/home04/team/team04.png" alt=""></a>
-                                <div class="tcteam__thumb-bg p-absolute" data-bg-color="#E2EAD7"></div>
-                                <div class="tcteam__thumb-bg-border p-absolute"></div>
-                                <div class="tcteam__social-2">
-                                    <a href="#"><i class="fab fa-behance"></i></a>
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                    <a href="#"><i class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                            <div class="tcteam__info">
-                                <h3 class="tcteam__title">Marks Colligan</h3>
-                                <span class="tcteam__subtitle">Project Manager</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--===== Team Area End =====-->
-
-
+        <!--===== Testimonial Area End =====-->
 
         <!--===== Blog Area Start =====-->
-        <section class="blog-area-start pt-120 pb-60">
-            <div class="container">
-                <div class="tc-section-title-wrapper mb-33">
-                    <span class="tc-section-subtitle mb-10"><i></i> blog articles</span>
-                    <h2 class="tc-section-title tc-upper mb-42">recent blog articles</h2>
+        <section class="blog-area-start pt-120 pb-60 plr-85">
+            <div class="container-fluid">
+                <div class="tc-section-title-wrapper mb-40 text-center">
+                    <span class="tc-section-subtitle mb-10"><i class="sub-dots"></i> recent articles</span>
+                    <h2 class="tc-section-title tc-section-title-3 tc-upper mb-42">our news & inside</h2>
                 </div>
                 <div class="row">
                     <div class="col-xl-4 col-lg-4 col-md-6">
                         <div class="tcblog mb-40">
-                            <div class="tcblog__thumb mb-30">
-                                <a href="#"><img src="assets/img/home04/blog/blog01.jpg" alt=""></a>
+                            <div class="tcblog__thumb mb-35">
+                                <a href="#"><img src="assets/img/home05/blog/blog01.jpg" alt=""></a>
                             </div>
-                            <div class="tcblog__content d-flex">
-                                <div class="tcblog__content-meta mr-20" data-bg-color="#FFE4FB">
-                                    <span><i class="fal fa-calendar-alt"></i> <cite> 20 Sep. 2023</cite></span>
+                            <div class="tcblog__content">
+                                <div class="tcblog__meta mb-15">
+                                    <span><a href="#"><i class="fal fa-calendar-alt"></i>20 Sep. 2023</a></span>
+                                    <cite></cite>
+                                    <span><a href="#"><i class="fal fa-certificate"></i>Creative</a></span>
                                 </div>
-                                <div class="tcblog__inner">
-                                    <div class="tcblog__meta mb-15">
-                                        <span><a href="#"><i class="fal fa-certificate tc-theme-orange"></i>Creative</a></span>
-                                    </div>
-                                    <div class="tcblog__title mb-25">
-                                        <a href="#" class="tc-cap">firmament us meat Were
-                                            Given saw tree living
-                                            Under Beast firmamens</a>
-                                    </div>
-                                    <div class="tcblog__btn">
-                                        <a href="#" class="tc-text-btn">Read More<i class="fal fa-arrow-right"></i></a>
-                                    </div>
+                                <div class="tcblog__title mb-25">
+                                    <a href="#">Unto seasons signs winged male great
+                                        forth itself hath spirit sixth</a>
+                                </div>
+                                <div class="tcblog__btn">
+                                    <a href="#" class="tc-text-btn tc-blog-arrow"><i class="flaticon-next-button"></i><span></span></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-xl-4 col-lg-4 col-md-6">
                         <div class="tcblog mb-40">
-                            <div class="tcblog__thumb mb-30">
-                                <a href="#"><img src="assets/img/home04/blog/blog02.jpg" alt=""></a>
+                            <div class="tcblog__thumb mb-35">
+                                <a href="#"><img src="assets/img/home05/blog/blog02.jpg" alt=""></a>
                             </div>
-                            <div class="tcblog__content d-flex">
-                                <div class="tcblog__content-meta mr-20" data-bg-color="#D6F0FF">
-                                    <span><i class="fal fa-calendar-alt"></i> <cite> 20 Sep. 2023</cite></span>
+                            <div class="tcblog__content pl-30">
+                                <div class="tcblog__meta mb-15">
+                                    <span><a href="#"><i class="fal fa-calendar-alt"></i>20 Sep. 2023</a></span>
+                                    <cite></cite>
+                                    <span><a href="#"><i class="fal fa-certificate"></i>Creative</a></span>
                                 </div>
-                                <div class="tcblog__inner">
-                                    <div class="tcblog__meta mb-15">
-                                        <span><a href="#"><i class="fal fa-certificate tc-theme-orange"></i>Creative</a></span>
-                                    </div>
-                                    <div class="tcblog__title mb-25">
-                                        <a href="#" class="tc-cap">heaven fish moveth beast
-                                            creepeth Every Seasons
-                                            light place waters seasons</a>
-                                    </div>
-                                    <div class="tcblog__btn">
-                                        <a href="#" class="tc-text-btn">Read More<i class="fal fa-arrow-right"></i></a>
-                                    </div>
+                                <div class="tcblog__title mb-25">
+                                    <a href="#">Saying create a great living very moveth
+                                        have whales face over evening</a>
+                                </div>
+                                <div class="tcblog__btn">
+                                    <a href="#" class="tc-text-btn tc-blog-arrow"><i class="flaticon-next-button"></i><span></span></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-xl-4 col-lg-4 col-md-6">
                         <div class="tcblog mb-40">
-                            <div class="tcblog__thumb mb-30">
-                                <a href="#"><img src="assets/img/home04/blog/blog03.jpg" alt=""></a>
+                            <div class="tcblog__thumb mb-35">
+                                <a href="#"><img src="assets/img/home05/blog/blog03.jpg" alt=""></a>
                             </div>
-                            <div class="tcblog__content d-flex">
-                                <div class="tcblog__content-meta mr-20" data-bg-color="#FFF3D7">
-                                    <span><i class="fal fa-calendar-alt"></i> <cite> 20 Sep. 2023</cite></span>
+                            <div class="tcblog__content">
+                                <div class="tcblog__meta mb-15">
+                                    <span><a href="#"><i class="fal fa-calendar-alt"></i>20 Sep. 2023</a></span>
+                                    <cite></cite>
+                                    <span><a href="#"><i class="fal fa-certificate"></i>Creative</a></span>
                                 </div>
-                                <div class="tcblog__inner">
-                                    <div class="tcblog__meta mb-15">
-                                        <span><a href="#"><i class="fal fa-certificate tc-theme-orange"></i>Creative</a></span>
-                                    </div>
-                                    <div class="tcblog__title mb-25">
-                                        <a href="#" class="tc-cap">firmament us meat Were
-                                            Given saw tree living
-                                            Under Beast firmamens</a>
-                                    </div>
-                                    <div class="tcblog__btn">
-                                        <a href="#" class="tc-text-btn">Read More<i class="fal fa-arrow-right"></i></a>
-                                    </div>
+                                <div class="tcblog__title mb-25">
+                                    <a href="#">Fourth light second replenish green
+                                        don't over given was us</a>
+                                </div>
+                                <div class="tcblog__btn">
+                                    <a href="#" class="tc-text-btn tc-blog-arrow"><i class="flaticon-next-button"></i><span></span></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!--===== Blog Area End =====-->
-
-        <!--===== Newsletter Area Start =====-->
-        <section class="tc-newsletter-area pt-90 pb-90 p-relative z-index-11 br-150 container-m-100"  data-bg-color="#D6F0FF">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-5">
-                        <div class="tc-section-title-wrapper">
-                            <h2 class="tc-section-title tc-upper m-0">Subscribe now</h2>
-                        </div>
-                    </div>
-                    <div class="col-xl-7">
-                        <div class="tc-newsletter-box tc-newsletter-box-2 p-relative">
-                            <h2 class="tc-newsletter-back-title d-none d-md-block" data-color="#C6E6F9">Newsletter</h2>
-                            <form action="">
-                                <div class="tc-newsletter-input">
-                                    <input type="email" placeholder="Email Here*">
-                                    <i class="fal fa-paper-plane"></i>
-                                </div>
-                                <button class="tc-btn">
-                                    <div class="tc-btn-wrap">
-                                        <span class="tc-btn-y-1">Subscribe Now</span>  
-                                        <span class="tc-btn-y-2">Subscribe Now</span>  
-                                    </div>
-                                </button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--===== Newsletter Area End =====-->
-
-        <!--===== Contact Area Start =====-->
-        <section class="tc-contact-area pt-120 pb-130">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-6">
-                        <div class="tc-contact-img">
-                            <img src="assets/img/home04/bg/contant-bg.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-xl-6">
-                        <div class="tc-section-title-wrapper mb-33">
-                            <span class="tc-section-subtitle mb-10"><i class="sub-dots"></i> get in touch</span>
-                            <h2 class="tc-section-title tc-upper mb-42">Send us message</h2>
-                        </div>
-                        <div class="tc-contact-form-box">
-                            <form action="#">
-                                <div class="row">
-                                    <div class="col-md-6 mb-30">
-                                        <div class="p-relative">
-                                            <input type="text" placeholder="Full Name">
-                                            <i class="far fa-user"></i>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 mb-30">
-                                        <div class="p-relative">
-                                            <input type="email" placeholder="Email here*">
-                                            <i class="far fa-envelope-open"></i>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12 mb-45">
-                                        <div class="p-relative">
-                                            <textarea name="" id="" cols="30" placeholder="write your comment*" rows="10"></textarea>
-                                            <i class="far fa-comment"></i>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <button class="tc-btn" type="submit">
-                                            <span class="tc-btn-wrap">
-                                                <span class="tc-btn-y-1">Sand Message</span>  
-                                                <span class="tc-btn-y-2">Sand Message</span>  
-                                                </span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--===== Contact Area End =====-->
-
-
-        <!--===== Footer Area Start =====-->
-        <footer class="p-relative" data-bg-color="#1A1A1A">
-            <div class="container">
-                <div class="tc-footer-title text-center pt-100">
-                    <h2>Global Trusted Partner</h2>
-                </div>
+             <div class="container">
                 <!--===== Brands Area Top Start =====-->
-                <div class="tc-brands-area pt-75 pb-75">
+                <div class="tc-brands-area pb-40">
                     <div class="container">
-                        <div class="tr-brands-wrapper">
+                        <div class="tc-footer-title text-center pt-30 m-0 border-0">
+                            <h2 data-bg-color="#fff" data-color="#57595C">Global Trusted Partner</h2>
+                        </div>
+                        <div class="tr-brands-wrapper  brand-five">
                             <div class="swiper tc-brand-top-active">
                                 <div class="swiper-wrapper tc-slide-transtion">
                                     <div class="swiper-slide tc-brand-slide-element">
                                         <div class="tc-brand-img">
-                                            <img src="assets/img/home02/brands/brands-bottom-1.png" alt="">
+                                            <img src="assets/img/home05/brands/brand01.png" alt="">
                                         </div>
                                     </div>
                                     <div class="swiper-slide tc-brand-slide-element">
                                         <div class="tc-brand-img">
-                                            <img src="assets/img/home02/brands/brands-bottom-1.png" alt="">
+                                            <img src="assets/img/home05/brands/brand02.png" alt="">
                                         </div>
                                     </div>
                                     <div class="swiper-slide tc-brand-slide-element">
                                         <div class="tc-brand-img">
-                                            <img src="assets/img/home02/brands/brands-bottom-2.png" alt="">
+                                            <img src="assets/img/home05/brands/brand03.png" alt="">
                                         </div>
                                     </div>
                                     <div class="swiper-slide tc-brand-slide-element">
                                         <div class="tc-brand-img">
-                                            <img src="assets/img/home02/brands/brands-bottom-3.png" alt="">
+                                            <img src="assets/img/home05/brands/brand04.png" alt="">
                                         </div>
                                     </div>
                                     <div class="swiper-slide tc-brand-slide-element">
                                         <div class="tc-brand-img">
-                                            <img src="assets/img/home02/brands/brands-bottom-4.png" alt="">
+                                            <img src="assets/img/home05/brands/brand05.png" alt="">
                                         </div>
                                     </div>
                                     <div class="swiper-slide tc-brand-slide-element">
                                         <div class="tc-brand-img">
-                                            <img src="assets/img/home02/brands/brands-bottom-5.png" alt="">
+                                            <img src="assets/img/home05/brands/brand01.png" alt="">
                                         </div>
                                     </div>
                                     <div class="swiper-slide tc-brand-slide-element">
                                         <div class="tc-brand-img">
-                                            <img src="assets/img/home02/brands/brands-bottom-6.png" alt="">
+                                            <img src="assets/img/home05/brands/brand02.png" alt="">
                                         </div>
                                     </div>
                                     <div class="swiper-slide tc-brand-slide-element">
                                         <div class="tc-brand-img">
-                                            <img src="assets/img/home02/brands/brands-bottom-7.png" alt="">
+                                            <img src="assets/img/home05/brands/brand03.png" alt="">
                                         </div>
                                     </div>
                                     <div class="swiper-slide tc-brand-slide-element">
                                         <div class="tc-brand-img">
-                                            <img src="assets/img/home02/brands/brands-bottom-1.png" alt="">
+                                            <img src="assets/img/home05/brands/brand04.png" alt="">
                                         </div>
                                     </div>
                                     <div class="swiper-slide tc-brand-slide-element">
                                         <div class="tc-brand-img">
-                                            <img src="assets/img/home02/brands/brands-bottom-2.png" alt="">
+                                            <img src="assets/img/home05/brands/brand05.png" alt="">
                                         </div>
                                     </div>
                                     <div class="swiper-slide tc-brand-slide-element">
                                         <div class="tc-brand-img">
-                                            <img src="assets/img/home02/brands/brands-bottom-3.png" alt="">
+                                            <img src="assets/img/home05/brands/brand01.png" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -1042,9 +875,43 @@
                     </div>
                 </div>
                 <!--===== Brands Area Bottom End =====-->
+             </div>
+        </section>
+        <!--===== Blog Area End =====-->
+
+        <!--===== Footer Area Start =====-->
+        <footer class="p-relative pt-110" data-bg-color="#1A1A1A">
+            <div class="container">
+                <div class="row gx-2">
+                    <div class="col-lg-3 col-md-6 col-sm-6 mb-10">
+                        <div class="tc-footer-social-box">
+                            <a href="#">#facebook</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 mb-10">
+                        <div class="tc-footer-social-box">
+                            <a href="#">#intstagram</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 mb-10">
+                        <div class="tc-footer-social-box">
+                            <a href="#">#twetter</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 mb-10">
+                        <div class="tc-footer-social-box">
+                            <a href="#">#behance</a>
+                        </div>
+                    </div>
+                </div>
                 <div class="tc-footer-widget-area pt-70 pb-40">
                     <div class="row">
-                        <div class="col-xl-3 col-lg-4 col-md-4">
+                        <div class="col-xl-5 col-lg-4 col-md-6">
+                            <h2 class="tc-section-title tc-section-title-white tc-upper mb-20">
+                                Have Design query? send us message
+                            </h2>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 pl-80 footer-widget-space">
                             <div class="tc-footer-widget mb-50 tc-footer-widget-4 tc-footer-col-1 ">
                                 <h3 class="tc-footer-widget-title mb-15">Contact Info</h3>
                                 <div class="tc-footer-content">
@@ -1059,36 +926,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-lg-4 col-md-4">
-                            <div class="wrapper pl-50">
-                                <div class="tc-footer-widget tc-footer-widget-4 mb-50">
-                                    <h3 class="tc-footer-widget-title mb-15">California</h3>
-                                    <div class="footer-content-white">
-                                        <span>3005 Meadowview Drive <br> Gordons, VA 22942</span>
-                                    </div>
-                                </div>
-                                <div class="tc-footer-widget tc-footer-widget-4 mb-50">
-                                    <h3 class="tc-footer-widget-title mb-15">Los Angels</h3>
-                                    <div class="footer-content-white">
-                                        <span>3587 Limer Street Dalton <br> Palmar 30720</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-4 col-md-4">
-                            <div class="tc-footer-widget mb-50 tc-footer-widget-4 pl-50">
-                                <h3 class="tc-footer-widget-title mb-15">Quick Links</h3>
-                                <ul>
-                                    <li><a href="#">About us</a></li>
-                                    <li><a href="#"> Services</a></li>
-                                    <li><a href="#">Meet the team</a></li>
-                                    <li><a href="#">Recent news</a></li>
-                                    <li><a href="#">Our gallery</a></li>
-                                    <li><a href="#">Case studies</a></li>  
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-xl-3">
+                        <div class="col-xl-3 col-lg-4 col-md-6">
                             <div class="tc-footer-widget tc-footer-widget-4 tc-footer-col-4 mb-50">
                                 <h3 class="tc-footer-widget-title mb-20">Newsletter</h3>
                                 <div class="tc-footer-newsletter tc-footer-newsletter-2 mb-45">
@@ -1116,18 +954,13 @@
                 </div>
                 <div class="tc-footer-copyright-area tc-footer-copyright-area-2 pt-40 pb-40 p-relative z-index-1">
                     <div class="row align-items-center ">
-                        <div class="col-xl-5 col-lg-4">
+                        <div class="col-xl-6 col-lg-6">
                             <div class="tc-footer-copyright tc-footer-copyright-white text-md-center text-lg-start ">
-                                <p>© Copyright 2023 | Alright reserved
-                                    exdos by <a href="#">Hr Design</a></p>
+                                <p class="m-0">© Copyright 2023 | Alright reserved
+                                    exdos by <a data-color="#FF3838" href="#">Hr Design</a></p>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-lg-4">
-                            <div class="tc-copy-logo">
-                                <a href="#"><img src="assets/img/home04/logo/logo-white.png" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-8">
+                        <div class="col-xl-6 col-lg-6">
                             <div class="tc-footer-menu text-lg-end text-md-center ">
                                 <ul>
                                     <li><a href="#">Career</a></li>

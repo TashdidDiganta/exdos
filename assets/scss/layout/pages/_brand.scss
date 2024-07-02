@@ -28,3 +28,17 @@
     justify-content: center;
     border: 1px solid #57595c;
 }
+
+.brand-five{
+    padding: 80px;
+    border: 1px solid #57595C;
+    @media #{$xs}{
+        padding: 35px;
+    }
+}
+
+.brand-wrapper{
+    @media #{$lg,$md,$xs}{
+        padding-left: 0;
+    }
+}

@@ -3,10 +3,11 @@
 .tcservices{
     padding: 40px 38px;
     margin-right: -1px;
-    transition: 0.3s;
+    @include  transition(.3s);
     @media #{$xl}{
         padding: 40px 30px;
     }
+    
     &__icon{
         & span{
             z-index: 2;
@@ -39,7 +40,7 @@
                 margin-right: 8px;
                 border-radius: 30px;
                 display: inline-block;
-                transform: translateY(-1px);
+                @include transform( translateY(-1px));
                 background-color: #57595c;
             }
             }
@@ -77,10 +78,16 @@
 }
 
 
+.tc-service-space{
+    @media #{$lg,$md,$xs}{
+        padding-bottom: 0;
+    }
+}
+
 .tc-sv-btn{
     display: flex;
     font-size: 18px;
-    transition: 0.3s;
+    @include  transition(.3s);
     padding: 6px 28px;
     border-radius: 5px;
     align-items: center;
@@ -88,7 +95,7 @@
     justify-content: space-between;
     font-family: var(--tc-heading-font);
     & i{
-        transform: rotate(-40deg);
+        @include transform( rotate(-40deg));
     }
 }
 
@@ -97,4 +104,78 @@
     margin-bottom: 20px;
     border: none;
     background-color: #fff;
+}
+
+.tc-service-2-tab{
+    & .nav-links:first-child{
+       & .tcsertab{
+        border-top: 1px solid #2b303f;
+       }
+    }
+    & .active{
+        & .tcsertab__title{
+            color: var(--tc-theme-red);
+        }
+    }
+}
+
+.tcsertab{
+    padding: 17px 0;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #2b303f;
+    &__num{
+        margin-top: 13px;
+    }
+    &__title{
+        font-size: 100px;
+        font-weight: 400;
+        @media #{$xl}{
+            font-size: 40px;
+    }
+        @media #{$lg}{
+            font-size: 20px;
+    }
+        @media #{$md}{
+            font-size: 70px;
+    }
+        @media #{$xs}{
+            font-size: 30px;
+    }
+    }
+    &__content{
+        & p{
+            margin: 0;
+            color: #b1b4ba;
+        }
+    }
+}
+
+.tc-project-tab{
+    @media #{$md,$xs}{
+        justify-content: start;
+}
+&-wrapper{
+    @media #{$xs}{
+        padding-left: 0;
+}
+}
+}
+
+.tc-service-bg{
+    @media #{$md,$xs}{
+        border-radius: 0px;
+}
+}
+
+.xl-title{
+    @media #{$xl}{
+        font-size: 20px;
+        margin-bottom: 20px;
+}
+}
+
+.tc-about-btn-space{
+    @media #{$md,$xs}{
+        margin-bottom: 50px;
+}
 }

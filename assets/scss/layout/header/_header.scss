@@ -9,6 +9,18 @@
 	position: absolute;
 }
 
+.tc-header-right{
+    &-pr{
+        @media #{$xxlm,$xl,$lg,$md,$xs}{       
+            padding-right: 0;
+         }
+    }
+
+    @media #{$lg,$md,$xs}{       
+        padding-top: 25;
+     }
+}
+
 .tc-header-area{
     @media #{$xl}{
         padding-left: 30px;
@@ -21,12 +33,46 @@
     }
 }
 
+.tc-header-space{
+    @media #{$xxlm}{       
+       padding-left: 50px;
+       padding-right: 50px;
+    }
+    @media #{$xl}{       
+        padding-left: 30px;
+        padding-right: 30px;
+     }
+     @media #{$lg}{       
+        padding-left: 30px;
+        padding-right: 30px;
+     }
+     @media #{$md}{       
+        padding-left: 30px;
+        padding-right: 0px;
+     }
+     @media #{$xs}{       
+        padding: 10px 15px;
+     }
+
+     &-5{
+        @media #{$lg,$md}{       
+            padding: 18px 30px;
+         }
+        @media #{$xs}{       
+            padding: 18px 15px;
+         }
+     }
+}
+
 .tc-main-menu {
     @media #{$xl}{
         padding-left: 10px;
     }
     & ul{
         & li{
+            @media screen  and (min-width: 1600px) and (max-width: 1800px) {
+                margin-right: 22px;
+            }
             display: inline;
             margin-right: 40px;
             position: relative;
@@ -49,9 +95,9 @@
                     left: 26px;
                     opacity: 0;
                     font-size: 40px;
-                    transition: 0.3s;
+                    @include  transition(.3s);
                     position: absolute;
-                    transform: rotate(133deg);
+                    transform: rotate(145deg);
                     color: var(--tc-theme-sec-color);
                     font-family: var(--tc-flat-font);
 
@@ -66,7 +112,7 @@
                 visibility: hidden;
                 position: absolute;
                 background: #fff;
-                transition: 0.3s;
+                @include  transition(.3s);
                 z-index: 999;
                 & li{
                     margin-right: 0;
@@ -212,7 +258,8 @@
         & .tc-header-menu button {
             background: none;
             display: inline-block;
-            transform: scaleX(-1);
+            @include transform( scaleX(-1));
+
             & i{
                 color: #0A0E1A;
             }
@@ -246,4 +293,22 @@
     }
 }
 
+
+.tc-header-toogle{
+    & button{            
+        padding: 6px 25px;
+        background: #23252D;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        @media #{$xs}{
+            padding: 6px 0px;
+        }
+        & i{
+            color: #fff;
+            font-size: 60px;
+            display: inline-flex;
+        }
+    }
+}
 

@@ -66,8 +66,12 @@
         padding-left: 60px;
         position: relative;
         @media #{$md,$xs}{
-            padding-left: 0;
+            padding-left: 70px;
         }
+        @media #{$xs}{
+            padding-left: 0px;
+        }
+
         &::before, &::after{
             content: "";
             top: 0;
@@ -88,7 +92,7 @@
     }
     &-4{
         padding-left: 35px;
-        @media #{$md,$xs}{
+        @media #{$lg,$md,$xs}{
             padding-left: 0;
         }
         &::before{
@@ -98,6 +102,12 @@
                 display: none;
             }
         }
+    }
+}
+
+.tc-footer-widget-4{
+    @media #{$lg,$md,$xs}{
+        padding-left: 0;
     }
 }
 
@@ -117,10 +127,17 @@
         & p{
             font-size: 17px;
             color: #B1B4BA;
-            margin: 0;
             & a{
                 font-weight: 500;
                 color: var(--tc-theme-sec-color);
+            }
+        }
+        &-3{
+            & p{
+                margin-bottom: 30px;
+                & a{
+                    color: var(--tc-theme-orange);
+                }
             }
         }
     }
@@ -135,6 +152,10 @@
                 padding-left: 33px;
                 margin-left: 33px;
                 position: relative;
+                @media #{$xl}{
+                    padding-left: 20px;
+                    margin-left: 20px;
+                }
                 @media #{$xs}{
                     padding-left: 10px;
                     margin-left: 10px;

@@ -1,6 +1,38 @@
 (function($){
     "use strict";
 
+    // // mobile menu 
+    var tdMenuWrap = $('.td-mobile-menu-active > ul').clone();
+    var tdSideMenu = $('.td-offcanvas-menu nav');
+    tdSideMenu.append(tdMenuWrap);
+    if ($(tdSideMenu).find('.sub-menu, .tp-mega-menu').length != 0) {
+      $(tdSideMenu).find('.sub-menu, .tp-mega-menu').parent().append('<button class="td-menu-close"><i class="fas fa-chevron-right"></i></button>');
+    }
+
+    var sideMenuList = $('.td-offcanvas-menu nav > ul > li button.td-menu-close, .td-offcanvas-menu nav > ul li.has-dropdown > a');
+    $(sideMenuList).on('click', function (e) {
+      console.log(e);
+      e.preventDefault();
+      if (!($(this).parent().hasClass('active'))) {
+        $(this).parent().addClass('active');
+        $(this).siblings('.sub-menu, .td-mega-menu').slideDown();
+      } else {
+        $(this).siblings('.sub-menu, .td-mega-menu').slideUp();
+        $(this).parent().removeClass('active');
+      }
+    });
+
+    
+
+    // side bar
+    $(".offcanvas-toogle").click(function(){
+      $(".td-offcanvas").addClass("td-offcanvas-open");
+      $(".td-offcanvas-overlay").addClass("td-offcanvas-overlay-open");
+    });
+    $(".td-offcanvas-close-toggle,.td-offcanvas-overlay").click(function(){
+      $(".td-offcanvas").removeClass("td-offcanvas-open");
+      $(".td-offcanvas-overlay").removeClass("td-offcanvas-overlay-open");
+    });
 
     // data background
     $("[data-background]").each(function(){
@@ -29,6 +61,37 @@
           prevEl: ".tc-test-button-prev",
         },
       });
+
+    // testimonial
+    var swiper = new Swiper(".tc-test-active", {
+      slidesPerView: 4,
+      spaceBetween: 30,
+      keyboard: {
+        enabled: true,
+      },
+      breakpoints: {
+        300: {
+          slidesPerView: 1,
+        },
+        576: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        992: {
+          slidesPerView: 3,
+        },
+        1200: {
+          slidesPerView: 4,
+        },
+      },
+
+      navigation: {
+        nextEl: ".tc-test-5-right",
+        prevEl: ".tc-test-5-left",
+      },
+    });
 
     // text slider
     var swiper = new Swiper(".tc-brand-top-active", {

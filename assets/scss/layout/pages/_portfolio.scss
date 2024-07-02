@@ -5,7 +5,7 @@
         left: 80px;
         opacity: 0;
         bottom: 70px;
-        transition: .3s;
+        @include  transition(.3s);;
         visibility: hidden;
         & span{
             font-size: 15px;
@@ -33,10 +33,19 @@
         bottom: 80px;
         visibility: visible;
     }
+
+    &__thumb{
+        & img{
+            width: 100%;
+        }
+    }
 }
 
 .tcshowcase{
     &__number{
+        @media #{$lg}{
+            margin-bottom: 14px;
+        }
         & span{
             font-size: 40px;
             color: #A3AEC3;
@@ -49,6 +58,19 @@
                 height: 1px;
                 position: absolute;
                 background: #A3AEC3;
+                @media #{$lg,$md,$xs}{
+                    width: 20px;
+                    left: -24px;
+                }
+            }
+        }
+    }
+
+    &__thumb{
+        @media #{$md,$xs}{
+            & img{
+                width: 100%;
+                margin-top: 20px;
             }
         }
     }
@@ -68,5 +90,39 @@
     &__title{
         color: #fff;
         font-size: 40px;
+        @media #{$lg,$xs}{
+            font-size: 25px;
+        }
+    }
+
+    &__logo{
+        padding: 20px;
+        min-height: 320px;
+        margin-right: -1px; 
+        @media #{$md,$xs}{
+            margin-top: 0;
+            margin-right: 0px; 
+        }
+    }
+
+    &__tag{
+        font-size: 15px;
+        color: #0A0E1A;
+        font-weight: 600;
+        padding: 4px 15px;
+        border-radius: 15px;
+        display: inline-block;
+        text-transform: uppercase;
+    }
+    &__border{
+        border: 1px solid #57595C;
+    }
+    &__content-box{
+        padding: 30px;
+        margin-bottom: -1px;
+        @media #{$md,$xs}{
+            margin-top: -1px;
+            margin-bottom: -1px;
+        }
     }
 }

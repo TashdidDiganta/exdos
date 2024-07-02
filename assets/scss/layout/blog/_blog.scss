@@ -1,3 +1,132 @@
 @use '../../utils' as *;
 
+.tcblog{
+    &__thumb{
+        & a{
+            & img{
+                width: 100%;
+            }
+        }
+    }
+    &__meta{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        & span{
+            font-size: 17px;
+            color: #57595C;
+            & i{
+                margin-right: 5px;
+            }
+        }
+        & cite{
+            width: 2px;
+            height: 16px;
+            margin: 0 14px;
+            background: #57595C;
+            display: inline-block;
+        }
+    }
+    &__title{
+        & a{
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 1.25;
+            font-family: var(--tc-heading-font);
+        }
+    }
+    &-2{
+        border: 1px solid #000;
+        border-radius: 10px;
+        position: relative;
+        @media #{$xs}{
+            padding: 5px;
+        }
+        & .tcblog__thumb{
+            width: 200px;
+            height: 100%;
+            margin-left: -3px;
+            position: absolute;
+            @include transform( translateY(-12px));
 
+            & img{
+                object-fit: cover;
+                height: calc(100% + 24px);
+            }
+            @media #{$xs}{
+                width: 100%;
+                margin: auto;
+                height: auto;
+                position: static;
+                @include transform( translateY(0px));
+            }
+        }
+        & .tcblog__content{
+            padding-top: 23px;
+            padding-left: 228px;
+            padding-bottom: 23px;
+            padding-right: 20px;
+            @media #{$xs}{
+                padding-left: 20px;
+            }
+          
+        }
+    }
+}
+
+
+.tcblog__content-meta {
+    width: 55px;
+    display: flex;
+    height: 170px;
+    padding: 5px 8px;
+    position: relative;
+    border-radius: 5px;
+    align-items: center;
+    flex-direction: column-reverse;
+    & span{
+        display: flex;
+        flex-direction: column-reverse;
+        & cite{
+            top: 28px;
+            left: -37px;
+            width: 130px;
+            font-size: 15px;
+            font-weight: 700;
+            font-style: normal;
+            position: absolute;
+            text-transform: uppercase;
+            @include transform( rotate(-90deg));
+        }
+    }
+    & i{
+        width: 45px;
+        height: 45px;
+        margin: auto;
+        font-size: 20px;
+        line-height: 45px;
+        border-radius: 5px;
+        text-align: center;
+        background-color: #fff;
+    }
+}
+
+.tc-blog-arrow{
+    position: relative;
+    & i{
+        font-size: 55px;
+        color: #57595C;
+        @include transform(rotate(0));
+    }
+    & span{
+        top: 9px;
+        left: 34px;
+        width: 38px;
+        z-index: -1;
+        height: 38px;
+        position: absolute;
+        border-radius: 38px;
+        display: inline-block;
+        background: #F8F5FF;
+    }
+}

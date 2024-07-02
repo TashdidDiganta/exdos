@@ -2,6 +2,11 @@
 
 
 .tc-newsletter{
+    &-area{
+        @media #{$lg}{
+            padding: 50px 50px;
+         }
+    }
     &-margin{
         margin-top: -110px;
     }

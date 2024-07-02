@@ -14,6 +14,11 @@
 }
 
 .tc-project{
+    &-area{
+        @media #{$xs}{
+            padding-top: 0;
+        }
+    }
     &-tab{
         @media #{$md,$xs}{
             display: flex;
@@ -27,7 +32,7 @@
             line-height: 1.2;
             padding: 20px 100px;
             padding-right: 35px;
-            transition: .3s;
+            @include  transition(.3s);
             border-bottom: 1px solid #2f446b;
             font-family: var(--tc-heading-font);
             text-align: left;
@@ -78,9 +83,18 @@
     &__thumb{
 
     }
+    &__content{
+        @media #{$md,$xs}{
+            padding-left: 10px;
+            padding-right: 10px;
+         }
+    }
     &__title{
         margin: 0;
         font-size: 30px;
+        @media #{$md,$xs}{
+            font-size: 26px;
+         }
     }
     &__meta{
         margin-bottom: 5px;
@@ -95,6 +109,29 @@
 
 .tc-project-active-margin{
     margin: 0 -100px;
+    @media #{$xs}{
+        margin: 0 -250px;
+     }
+    @media #{$lg}{
+        margin: 0 -150px;
+     }
+    @media #{$md,$xs}{
+        margin: 0;
+     }
 }
 
+.project-guide{
+    @media #{$md,$xs}{
+        .tcshowcase__thumb{
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+     }
+}
+
+.reverse-item{
+    @media #{$md}{
+        flex-direction: column-reverse;
+     }
+}
 

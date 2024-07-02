@@ -24,8 +24,8 @@
                     </div>
                     <div class="col-xl-10 col-lg-7 col-md-8 col-6">
                         <div class="tc-header-box d-flex justify-content-xl-between justify-content-end">
-                            <div class="tc-main-menu pl-45 d-xl-block d-none ">
-                                <nav>
+                            <div class="tc-main-menu pl-45 d-xl-block d-none">
+                                <nav class="td-mobile-menu-active">
                                     <ul>
                                         <li><a href="index.html">Home</a>
                                             <ul class="sub-menu">
@@ -46,7 +46,15 @@
                                         </li>
                                         <li><a href="#">About Us</a></li>
                                         <li><a href="#">Service</a></li>
-                                        <li><a href="#">Portfolio</a></li>
+                                        <li><a href="#">Portfolio</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="#">Home label 1 </a></li>
+                                                <li><a href="#">Home label 2</a></li>
+                                                <li><a href="#">Home label 3</a></li>
+                                                <li><a href="#">Home label 4</a></li>
+                                                <li><a href="#">Home label 5</a></li>
+                                            </ul>
+                                        </li>
                                         <li><a href="#">Pages</a></li>
                                         <li><a href="#">Blog</a></li>
                                         <li><a href="#">Contact</a></li>                                                     
@@ -65,11 +73,11 @@
                                     </div>
                                     <div class="tc-header-cta-text">
                                         <span>Free Call</span>
-                                        <h4> 02 (256) 256 025 </h4>
+                                        <h4> 02 (256) 536 025 </h4>
                                     </div>
                                 </div>
                                 <div class="tc-header-menu">
-                                    <button class="d-flex align-items-center">
+                                    <button class="d-flex align-items-center offcanvas-toogle">
                                         <i class="flaticon-menu"></i>
                                     </button>
                                 </div>
@@ -81,6 +89,47 @@
         </div>
     </header> 
     <!--===== Header Area End =====-->
+    <!-- offcanvs start-->
+     <div class="td-offcanvas">
+        <div class="td-offcanvas-wrapper">
+            <div class="td-offcanvas-header d-flex justify-content-between align-items-center mb-40">
+                <div class="td-offcanvas-header-logo">
+                    <a href="index.html"><img src="assets/img/black-logo.png" alt=""></a>
+                </div>
+                <div class="td-offcanvas-header-close">
+                    <button class="td-offcanvas-close-toggle"><i class="fal fa-times"></i></button>
+                </div>
+            </div>
+            <div class="td-offcanvas-menu d-xl-none d-lg-block">
+                <nav></nav>
+            </div>
+            <div class="td-offcanvas-content mb-40">
+                <h2 class="td-offcanvas-title">Hello There!</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, animi quod. Iste laborum atque quidem facilis! Ratione harum quo iure!</p>
+            </div>
+            <div class="td-offcanvas-gallery mb-40">
+                <a class="popup-image" href="assets/img/home05/showcase/showcase-thumb01.jpg"><img src="assets/img/home05/showcase/showcase-thumb01.jpg" alt=""></a>
+                <a class="popup-image" href="assets/img/home05/showcase/showcase-thumb02.jpg"><img src="assets/img/home05/showcase/showcase-thumb02.jpg" alt=""></a>
+                <a class="popup-image" href="assets/img/home05/showcase/showcase-thumb03.jpg"><img src="assets/img/home05/showcase/showcase-thumb03.jpg" alt=""></a>
+                <a class="popup-image" href="assets/img/home05/showcase/showcase-thumb04.jpg"><img src="assets/img/home05/showcase/showcase-thumb04.jpg" alt=""></a>
+            </div>
+            <div class="td-offcanvas-info mb-40">
+                <h3 class="td-offcanvas-sm-title">Information</h3>
+                <span><a href="#">+4 20 7700 1007</a></span>
+                <span><a href="#">hello@exdos.com</a></span>
+                <span><a href="#">Avenue de Roma 158b, Lisbon</a></span>
+            </div>
+            <div class="td-offcanvas-social">
+                <h3 class="td-offcanvas-sm-title">Follow Us</h3>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+     </div>
+    <!-- offcanvs end-->
+     <div class="td-offcanvas-overlay"></div>
     <main>
         <!--===== Hero Area Start =====-->
         <section class="tc-hero-area tc-black-bg p-relative tc-hero-padding pt-280 pb-180"  style="background-image: url('assets/img/home01/bg/hero-1-bg.png');">

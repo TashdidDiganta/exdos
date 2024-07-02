@@ -42,6 +42,9 @@
 	}
 	&-150{
 		border-radius: 150px;
+		@media #{$md,$xs}{
+			border-radius: 0;
+		}
 	}
 }
 
@@ -92,8 +95,27 @@ img{
 	position: absolute;
 }
 
+.tc-fs{
+	&-15{
+		font-size: 15px;
+	}
+	&-24{
+		font-size: 24px;
+	}
+	&-40{
+		font-size: 40px;
+		@media #{$lg,$md,$xs}{
+			font-size: 25px;
+		}
+	}
+}
+
 .tc-black-bg{
 	background-color: var(--tc-common-black);
+}
+
+.tc-text-white{
+	color: #fff;
 }
 
 .tc-theme-black-bg{
@@ -144,6 +166,9 @@ img{
 
 .br-140{
 	border-radius: 140px;
+	@media #{$md,$xs}{
+		border-radius: 0;
+	}
 }
 
 h1 span{

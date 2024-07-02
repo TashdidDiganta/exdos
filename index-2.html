@@ -13,18 +13,18 @@
 </head>
 <body>
      <header>
-        <div class="tc-header-area tc-transparent-header pl-100 pr-100 tc-header-border">
+        <div class="tc-header-area tc-header-space tc-transparent-header pl-100 pr-100 tc-header-border">
             <div class="container-fluid p-0">
                 <div class="row align-items-center gx-0">
-                    <div class="col-xl-2 col-lg-5 col-md-4 col-6">
+                    <div class="col-xl-2 col-lg-3 col-md-3 col-6">
                         <div class="tc-logo">
                             <a href="index.html"><img src="assets/img/home01/logo/logo-white.png" alt=""></a>
                         </div>
                     </div>
-                    <div class="col-xl-10 col-lg-7 col-md-8 col-6">
+                    <div class="col-xl-10 col-lg-9 col-md-9 col-6">
                         <div class="tc-header-box d-flex justify-content-xl-between justify-content-end">
                             <div class="tc-main-menu pl-45 d-xl-block d-none ">
-                                <nav>
+                                <nav class="td-mobile-menu-active">
                                     <ul>
                                         <li><a href="#">Home</a>
                                             <ul class="sub-menu">
@@ -38,14 +38,13 @@
                                                         <li><a href="#">Home label 5</a></li>
                                                     </ul>
                                                 </li>
-                                                <li><a href="#">Home 3</a></li>
-                                                <li><a href="#">Home 4</a></li>
-                                                <li><a href="#">Home 5</a></li>
+                                                <li><a href="index-3.html">Home 3</a></li>
+                                                <li><a href="index-4.html">Home 4</a></li>
+                                                <li><a href="index-5.html">Home 5</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="#">About Us</a></li>
                                         <li><a href="#">Service</a></li>
-                                        <li><a href="#">Portfolio</a></li>
                                         <li><a href="#">Pages</a></li>
                                         <li><a href="#">Blog</a></li>
                                         <li><a href="#">Contact</a></li>                                                     
@@ -67,7 +66,7 @@
                                         <h4> 02 (256) 256 025 </h4>
                                     </div>
                                 </div>
-                                <div class="tc-header-btn">
+                                <div class="tc-header-btn d-none d-lg-flex">
                                     <a href="#" class="tc-btn-sec tc-btn-sec-lg">
                                         <div class="tc-btn-wrap">
                                            <span class="tc-btn-y-1">Get Started</span>  
@@ -76,6 +75,11 @@
                                         <i></i>
                                     </a>
                                 </div>
+                                <div class="tc-header-toogle ml-30 d-xl-none">
+                                    <button class="d-flex align-items-center offcanvas-toogle">
+                                        <i class="flaticon-menu"></i>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -83,11 +87,53 @@
             </div>
         </div>
     </header> 
+
+        <!-- offcanvs start-->
+        <div class="td-offcanvas">
+            <div class="td-offcanvas-wrapper">
+                <div class="td-offcanvas-header d-flex justify-content-between align-items-center mb-40">
+                    <div class="td-offcanvas-header-logo">
+                        <a href="index.html"><img src="assets/img/black-logo.png" alt=""></a>
+                    </div>
+                    <div class="td-offcanvas-header-close">
+                        <button class="td-offcanvas-close-toggle"><i class="fal fa-times"></i></button>
+                    </div>
+                </div>
+                <div class="td-offcanvas-menu d-xl-none d-lg-block">
+                    <nav></nav>
+                </div>
+                <div class="td-offcanvas-content mb-40">
+                    <h2 class="td-offcanvas-title">Hello There!</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, animi quod. Iste laborum atque quidem facilis! Ratione harum quo iure!</p>
+                </div>
+                <div class="td-offcanvas-gallery mb-40">
+                    <a class="popup-image" href="assets/img/home05/showcase/showcase-thumb01.jpg"><img src="assets/img/home05/showcase/showcase-thumb01.jpg" alt=""></a>
+                    <a class="popup-image" href="assets/img/home05/showcase/showcase-thumb02.jpg"><img src="assets/img/home05/showcase/showcase-thumb02.jpg" alt=""></a>
+                    <a class="popup-image" href="assets/img/home05/showcase/showcase-thumb03.jpg"><img src="assets/img/home05/showcase/showcase-thumb03.jpg" alt=""></a>
+                    <a class="popup-image" href="assets/img/home05/showcase/showcase-thumb04.jpg"><img src="assets/img/home05/showcase/showcase-thumb04.jpg" alt=""></a>
+                </div>
+                <div class="td-offcanvas-info mb-40">
+                    <h3 class="td-offcanvas-sm-title">Information</h3>
+                    <span><a href="#">+4 20 7700 1007</a></span>
+                    <span><a href="#">hello@exdos.com</a></span>
+                    <span><a href="#">Avenue de Roma 158b, Lisbon</a></span>
+                </div>
+                <div class="td-offcanvas-social">
+                    <h3 class="td-offcanvas-sm-title">Follow Us</h3>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+         </div>
+        <!-- offcanvs end-->
+         <div class="td-offcanvas-overlay"></div>
    
 
     <main>
         <!--===== Hero Area Start =====-->
-        <section class="tc-hero-area tc-black-bg p-relative tc-hero-padding pt-280 pb-180 bg-pos-end" data-background="assets/img/home02/bg/hero-2-bg.png";>
+        <section class="tc-hero-area tc-black-bg  p-relative tc-hero-padding tc-hero-2-padding pt-280 pb-180 bg-pos-end" data-background="assets/img/home02/bg/hero-2-bg.png";>
             <div class="hero-info d-none d-xxl-block  justify-content-between ">
                 <div class="hero-info-social">
                     <span>Follow Us - </span>
@@ -102,10 +148,10 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-7">
+                    <div class="col-xl-7 col-lg-8">
                         <div class="tc-hero p-relative z-index-11">
                             <div class="mb-30">
-                                <h1 class="tc-hero-title">Extension <br> <img src="assets/img/icon/arrow-up.png" alt=""> of unique brand idea</h1>
+                                <h1 class="tc-hero-title tc-hero-title-2">Extension <br> <img src="assets/img/icon/arrow-up.png" alt=""> of unique brand idea</h1>
                                 <div class="tc-hero-desc d-flex pt-45">
                                     <p>Expert advertising solutions <br> to elevate your brand</p>
                                     <div class="tc-hero-url-box">
@@ -230,18 +276,18 @@
         <section class="tc-about-area tc-cream-bg pt-130">
             <div class="container z-index-11">
                 <div class="row">
-                    <div class="col-xl-7">
+                    <div class="col-xl-7 col-lg-6">
                         <div class="tc-about-wrapper p-relative pl-230">
                             <div class="tc-section-title-wrapper mb-33">
                                 <span class="tc-section-subtitle mb-10"><i></i> our company</span>
                                 <h2 class="tc-section-title tc-upper mb-42">Enjoy your <br>power of the <br>branding</h2>
                             </div>
-                            <div class="tc-about-circle-image p-absolute pl-35">
+                            <div class="tc-about-circle-image p-absolute d-none d-xl-block pl-35">
                                 <img src="assets/img/home02/about/about-two.png" alt="">
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-5">
+                    <div class="col-xl-5 col-lg-6">
                         <div class="tc-about-content">
                             <p>Per ipsum ultrices sollicitud platea facilisi Semper aliquam up tacits senectus cursus vivamu volutpat penatibus fringilla porttitor do  magna purus massa per duis dapibus scelerisqu divice fred etiam</p>
                             <ul>
@@ -268,7 +314,7 @@
         <section class="tc-fact-area pt-30 pb-60">
             <div class="container">
                 <div class="row justify-content-end">
-                    <div class="col-xl-3">
+                    <div class="col-xl-3 col-md-6">
                         <div class="tcfact tcfact-2 text-center text-md-start mb-40">
                             <div class="tcfact__icon">
                                 <span>
@@ -281,7 +327,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3">
+                    <div class="col-xl-3 col-md-6">
                         <div class="tcfact tcfact-2 text-center text-md-start mb-40">
                             <div class="tcfact__icon">
                                 <span>
@@ -660,7 +706,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="tc-test-2-slider-arrow d-flex align-items-center">
+                            <div class="tc-test-2-slider-arrow align-items-center">
                                 <div class="tc-test-button-prev tc-test-2-button tc-rotate-icon"><i class="flaticon-right-arrow"></i></div>
                                 <span></span>
                                 <div class="tc-test-button-next tc-test-2-button"><i class="flaticon-right-arrow"></i></div>
@@ -681,8 +727,8 @@
                     <h2 class="tc-section-title tc-upper mb-42">news and articles</h2>
                 </div>
                 <div class="row">
-                    <div class="col-xl-6 col-lg-4 col-md-6">
-                        <div class="tcblog tcblog-2 mb-65 d-flex">
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="tcblog tcblog-2 mb-65 d-md-flex">
                             <div class="tcblog__thumb mb-35">
                                 <a href="#"><img src="assets/img/home02/blog/blog01.jpg" alt=""></a>
                             </div>
@@ -702,8 +748,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-6 col-lg-4 col-md-6">
-                        <div class="tcblog tcblog-2 mb-65 d-flex">
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="tcblog tcblog-2 mb-65 d-md-flex">
                             <div class="tcblog__thumb mb-35">
                                 <a href="#"><img src="assets/img/home02/blog/blog02.jpg" alt=""></a>
                             </div>
@@ -723,8 +769,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-6 col-lg-4 col-md-6">
-                        <div class="tcblog tcblog-2 mb-60 d-flex">
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="tcblog tcblog-2 mb-60 d-md-flex">
                             <div class="tcblog__thumb mb-35">
                                 <a href="#"><img src="assets/img/home02/blog/blog03.jpg" alt=""></a>
                             </div>
@@ -744,8 +790,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-6 col-lg-4 col-md-6">
-                        <div class="tcblog tcblog-2 mb-60 d-flex">
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="tcblog tcblog-2 mb-60 d-md-flex">
                             <div class="tcblog__thumb mb-35">
                                 <a href="#"><img src="assets/img/home02/blog/blog04.jpg" alt=""></a>
                             </div>
@@ -821,7 +867,7 @@
                     <div class="row align-items-center ">
                         <div class="col-xl-3 col-lg-3 col-md-4">
                             <div class="footer-logo mb-20">
-                                <a href="#"><img src="assets/img/logo/logo-white.png" alt=""></a>
+                                <a href="#"><img src="assets/img/home01/logo/logo-white.png" alt=""></a>
                             </div>
                         </div>
                         <div class="col-xl-6 col-lg-6 col-md-5">
@@ -829,7 +875,7 @@
                             </div>
                         </div>
                         <div class="col-xl-3 col-lg-3 col-md-3">
-                            <div class="tcfooter__social mb-20">
+                            <div class="tcfooter__social mb-20 text-start text-md-end">
                                 <a href="#"><i class="fab fa-behance"></i></a>
                                 <a href="#"><i class="fab fa-twitter"></i></a>
                                 <a href="#"><i class="fab fa-instagram"></i></a>

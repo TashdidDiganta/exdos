@@ -14,18 +14,18 @@
 <body>
      <!--===== Header Area Start =====-->
      <header>
-        <div class="tc-header-area tc-transparent-header pl-100 pr-100 tc-header-border">
+        <div class="tc-header-area tc-header-space tc-transparent-header pl-100 pr-100 tc-header-border">
             <div class="container-fluid p-0">
                 <div class="row align-items-center gx-0">
-                    <div class="col-xl-2 col-lg-5 col-md-4 col-6">
+                    <div class="col-xl-2  col-6">
                         <div class="tc-logo">
                             <a href="index-3.html"><img src="assets/img/home03/logo-black.png" alt=""></a>
                         </div>
                     </div>
-                    <div class="col-xl-8 col-lg-7 col-md-8 col-6">
+                    <div class="col-xl-8 col-lg-7 col-md-8 d-none d-xl-block">
                         <div class="tc-header-box d-flex justify-content-center justify-content-end">
                             <div class="tc-main-menu tc-main-menu-3 d-xl-block d-none ">
-                                <nav>
+                                <nav  class="td-mobile-menu-active">
                                     <ul>
                                         <li><a href="index.html">Home</a>
                                             <ul class="sub-menu">
@@ -39,14 +39,13 @@
                                                         <li><a href="#">Home label 5</a></li>
                                                     </ul>
                                                 </li>
-                                                <li><a href="#">Home 3</a></li>
-                                                <li><a href="#">Home 4</a></li>
-                                                <li><a href="#">Home 5</a></li>
+                                                <li><a href="index-3.html">Home 3</a></li>
+                                                <li><a href="index-4.html">Home 4</a></li>
+                                                <li><a href="index-5.html">Home 5</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="#">About Us</a></li>
                                         <li><a href="#">Service</a></li>
-                                        <li><a href="#">Portfolio</a></li>
                                         <li><a href="#">Pages</a></li>
                                         <li><a href="#">Blog</a></li>
                                         <li><a href="#">Contact</a></li>                                                     
@@ -55,7 +54,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-2">
+                    <div class="col-xl-2 col-6">
                         <div class="tc-header-right tc-header-right-black d-flex justify-content-end flex-wrap align-items-center">
                             <div class="tc-header-search d-flex align-items-center d-md-flexs">
                                 <button>
@@ -64,7 +63,7 @@
                             </div>
                             <span class="sep-vr"></span>
                             <div class="tc-header-menu">
-                                <button class="align-items-center">
+                                <button class="align-items-center offcanvas-toogle">
                                     <i class="flaticon-menu"></i>
                                 </button>
                             </div>
@@ -75,6 +74,49 @@
         </div>
     </header> 
     <!--===== Header Area End =====-->
+
+
+    <!-- offcanvs start-->
+    <div class="td-offcanvas">
+        <div class="td-offcanvas-wrapper">
+            <div class="td-offcanvas-header d-flex justify-content-between align-items-center mb-40">
+                <div class="td-offcanvas-header-logo">
+                    <a href="index.html"><img src="assets/img/black-logo.png" alt=""></a>
+                </div>
+                <div class="td-offcanvas-header-close">
+                    <button class="td-offcanvas-close-toggle"><i class="fal fa-times"></i></button>
+                </div>
+            </div>
+            <div class="td-offcanvas-menu d-xl-none d-lg-block">
+                <nav></nav>
+            </div>
+            <div class="td-offcanvas-content mb-40">
+                <h2 class="td-offcanvas-title">Hello There!</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, animi quod. Iste laborum atque quidem facilis! Ratione harum quo iure!</p>
+            </div>
+            <div class="td-offcanvas-gallery mb-40">
+                <a class="popup-image" href="assets/img/home05/showcase/showcase-thumb01.jpg"><img src="assets/img/home05/showcase/showcase-thumb01.jpg" alt=""></a>
+                <a class="popup-image" href="assets/img/home05/showcase/showcase-thumb02.jpg"><img src="assets/img/home05/showcase/showcase-thumb02.jpg" alt=""></a>
+                <a class="popup-image" href="assets/img/home05/showcase/showcase-thumb03.jpg"><img src="assets/img/home05/showcase/showcase-thumb03.jpg" alt=""></a>
+                <a class="popup-image" href="assets/img/home05/showcase/showcase-thumb04.jpg"><img src="assets/img/home05/showcase/showcase-thumb04.jpg" alt=""></a>
+            </div>
+            <div class="td-offcanvas-info mb-40">
+                <h3 class="td-offcanvas-sm-title">Information</h3>
+                <span><a href="#">+4 20 7700 1007</a></span>
+                <span><a href="#">hello@exdos.com</a></span>
+                <span><a href="#">Avenue de Roma 158b, Lisbon</a></span>
+            </div>
+            <div class="td-offcanvas-social">
+                <h3 class="td-offcanvas-sm-title">Follow Us</h3>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        </div>
+    <!-- offcanvs end-->
+        <div class="td-offcanvas-overlay"></div>
     <main>
         <!--===== Hero Area Start =====-->
         <section class="tc-hero-area p-relative tc-hero-padding pt-210 pb-110" data-background="assets/img/home03/bg/hero-bg.png">
@@ -86,7 +128,7 @@
                 <div class="row">
                     <div class="col-xl-12">
                         <div class="tc-hero-wrapper d-flex">
-                            <div class="tc-hero-img ml-20">
+                            <div class="tc-hero-img d-none d-lg-block ml-20">
                                 <img src="assets/img/home03/hero/hero01.png" alt="">
                             </div>
                             <div class="tc-hero tc-hero-black pt-40 p-relative ml-80 z-index-11">
@@ -119,7 +161,7 @@
                                 by our service</h2>
                         </div>
                         <div class="row gx-0">
-                            <div class="col-xl-6">
+                            <div class="col-md-6">
                                 <div class="tcservices tcservices-2 d-flex br-24">
                                     <div class="tcservices__icon mb-25 mr-20 p-relative">
                                         <span><i class="flaticon-geometric-1"></i></span>
@@ -136,7 +178,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-6">
+                            <div class="col-md-6">
                                 <div class="tcservices tcservices-2 d-flex br-24">
                                     <div class="tcservices__icon mb-25 mr-20 p-relative">
                                         <span><i class="flaticon-geometric-2"></i></span>
@@ -153,7 +195,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-6">
+                            <div class="col-md-6">
                                 <div class="tcservices tcservices-2 d-flex br-24">
                                     <div class="tcservices__icon mb-25 mr-20 p-relative">
                                         <span><i class="flaticon-geometric"></i></span>
@@ -170,7 +212,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-6">
+                            <div class="col-md-6">
                                 <div class="tcservices tcservices-2 d-flex br-24">
                                     <div class="tcservices__icon mb-25 mr-20 p-relative">
                                         <span><i class="flaticon-geometric-3"></i></span>
@@ -179,7 +221,7 @@
                                         </div>
                                     </div>
                                     <div class="tcservices__text">
-                                        <h3 class="tcservices__title mb-15">Art Direction</h3>
+                                        <h3 class="tcservices__title mb-15">Art's Direction</h3>
                                         <p>Perfs ipsum ultrices sollicitudin iaculis platea facilisi</p>
                                         <div class="tcservices__icon_btn mt-20">
                                             <a href="#"> <i class="flaticon-next-button"></i></a>
@@ -189,7 +231,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4">
+                    <div class="col-xl-4 d-none d-xl-block">
                         <div class="tcservices-thumb br-20">
                             <img src="assets/img/home03/services/service-body.jpg" alt="">
                         </div>
@@ -200,20 +242,20 @@
         <!--===== Services Area End =====-->
 
         <!--===== About Area Start =====-->
-        <section class="tc-about-area pt-130 pb-135 p-relative ">
+        <section class="tc-about-area pt-95 tc-about-spaceing pb-95 p-relative ">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-7">
+                    <div class="col-xl-7 col-lg-6 col-md-12 mb-50">
                         <div class="tc-about-shape p-relative">
                             <img class="tc-about-2-shape-1 p-absolute" src="assets/img/home03/shape/about01.png" alt="">
-                            <img class="tc-about-2-shape-2 p-absolute" src="assets/img/home03/shape/about02.png" alt="">
+                            <img class="tc-about-2-shape-2 p-absolute d-none d-md-block" src="assets/img/home03/shape/about02.png" alt="">
                         </div>
                         <div class="tc-about-thumb p-relative ml-60 mr-80 text-center">
                             <img  src="assets/img/home03/about/duck.png" alt="">
                             <div class="tc-about-circle"></div>
                         </div>
                     </div>
-                    <div class="col-md-5">
+                    <div class="col-xl-5 col-lg-6 col-md-12">
                         <div class="tc-about-box">
                             <div class="tc-section-title-wrapper mb-40">
                                 <span class="tc-section-subtitle mb-10"><i class="sub-dots"></i>our company</span>
@@ -265,7 +307,7 @@
                                     </div>
                                 </div>
                               </div>
-                              <div class="tc-about-btn mt-50 mb-130">
+                              <div class="tc-about-btn mt-50 mb-50">
                                 <a href="#" class="tc-btn tc-btn-orange">
                                     <div class="tc-btn-wrap">
                                         <span class="tc-btn-y-1">Discover More</span>  
@@ -335,7 +377,7 @@
                     <h2 class="tc-section-title tc-section-title-3 tc-upper mb-42">how we work</h2>
                 </div>
                 <div class="row">
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-xl-3 col-md-6">
                         <div class="tcprocess tcprocess_border pt-60 pb-60 pl-35 pr-35 mb-30 text-center">
                             <div class="tcprocess__step mb-35">
                                 <span>Step (01)</span>
@@ -348,7 +390,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-xl-3 col-md-6">
                         <div class="tcprocess tcprocess_border pt-60 pb-60 pl-35 pr-35 mb-30 text-center">
                             <div class="tcprocess__step mb-35">
                                 <span>Step (02)</span>
@@ -361,7 +403,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-xl-3 col-md-6">
                         <div class="tcprocess tcprocess_border pt-60 pb-60 pl-35 pr-35 mb-30 text-center">
                             <div class="tcprocess__step mb-35">
                                 <span>Step (03)</span>
@@ -374,7 +416,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-xl-3 col-md-6">
                         <div class="tcprocess tcprocess_border pt-60 pb-60 pl-35 pr-35 mb-30 text-center">
                             <div class="tcprocess__step mb-35">
                                 <span>Step (04)</span>
@@ -393,7 +435,7 @@
         <!--===== Process Area End =====-->
 
         <!--===== Project Area Start =====-->
-        <div class="tc-project-tab-area tc-nblue-bg pb-130 pt-130 pr-100" data-background="assets/img/home03/bg/project-bg.png">
+        <div class="tc-project-tab-area tc-nblue-bg pb-130 pt-130" data-background="assets/img/home03/bg/project-bg.png">
             <div class="container">
                 <div class="row align-items-end">
                     <div class="col-lg-7">
@@ -407,13 +449,13 @@
                             <p class="tc-section-title-content-white">Per ipsum ultrices sollicitud platea facilisi Semper aliquam up tacits <b>senectus cursus</b> vivamu volutpat penatibus fringilla porttitor do magna purus massa per <b>duis dapibus</b> scelerisqu divice fred etiam</p>
                         </div>
                     </div>
-                    <div class="row g-0 align-items-center">
-                        <div class="col-lg-6">
-                            <div class="tcshowcase__thumb br-20">
+                    <div class="row gx-xl-0 project-guide align-items-center">
+                        <div class="col-xl-6 col-lg-6">
+                            <div class="tcshowcase__thumb w-img br-20">
                                 <img src="assets/img/home03/project/project01.jpg" alt="">
                             </div>
                         </div>
-                        <div class="offset-xl-1 col-lg-5">
+                        <div class="offset-xl-1 col-xl-5 col-lg-6">
                             <div class="tcshowcase pl-10">
                                 <div class="tcshowcase__number mb-30">
                                     <span>01</span>
@@ -431,7 +473,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="offset-xl-1 col-lg-5">
+                    </div>
+                    <div class="row gx-xl-0 project-guide align-items-center flex-column-reverse flex-lg-row">
+                        <div class="offset-xl-1 col-xl-5 col-lg-6">
                             <div class="tcshowcase pl-10">
                                 <div class="tcshowcase__number mb-30">
                                     <span>02</span>
@@ -449,17 +493,19 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6">
-                            <div class="tcshowcase__thumb br-20">
+                        <div class="col-xl-6 col-lg-6">
+                            <div class="tcshowcase__thumb w-img br-20">
                                 <img src="assets/img/home03/project/project02.jpg" alt="">
                             </div>
                         </div>
-                        <div class="col-lg-6">
-                            <div class="tcshowcase__thumb br-20">
+                    </div>
+                    <div class="row gx-xl-0 project-guide align-items-center">
+                        <div class="col-xl-6 col-lg-6">
+                            <div class="tcshowcase__thumb w-img br-20">
                                 <img src="assets/img/home03/project/project03.jpg" alt="">
                             </div>
                         </div>
-                        <div class="offset-xl-1 col-lg-5">
+                        <div class="offset-xl-1 col-xl-5 col-lg-6">
                             <div class="tcshowcase pl-10">
                                 <div class="tcshowcase__number mb-30">
                                     <span>03</span>
@@ -491,7 +537,7 @@
                     <h2 class="tc-section-title tc-section-title-3 tc-upper mb-42">Friendly budget</h2>
                 </div>
                 <div class="row">
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-xl-4 col-md-6">
                         <div class="tcprice" data-background="assets/img/home03/bg/price-bg.jpg">
                             <div class="tcprice__icon">
                                 <span><i class="flaticon-geometric-6"></i></span>
@@ -523,7 +569,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-xl-4 col-md-6">
                         <div class="tcprice" data-background="assets/img/home03/bg/price-bg.jpg">
                             <div class="tcprice__icon">
                                 <span><i class="flaticon-geometric-7"></i></span>
@@ -555,7 +601,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-xl-4 col-md-6">
                         <div class="tcprice" data-background="assets/img/home03/bg/price-bg.jpg">
                             <div class="tcprice__icon">
                                 <span><i class="flaticon-geometric-8"></i></span>
@@ -599,13 +645,13 @@
         <div class="tc-brand-area tc-cream-bg-2 pt-120 pb-90">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-6">
+                    <div class="col-xl-6 col-lg-5">
                         <div class="tc-section-title-wrapper mb-40">
                             <span class="tc-section-subtitle mb-10"><i class="sub-dots"></i>trusted clients</span>
                             <h2 class="tc-section-title tc-section-title-3 tc-upper mb-42">Popular company love us for our best service</h2>
                         </div>
                     </div>
-                    <div class="col-xl-6">
+                    <div class="col-xl-6 col-lg-7">
                         <div class="brand-wrapper pl-80">
                             <div class="row g-0">
                                 <div class="col-md-6">
@@ -650,7 +696,7 @@
         <section class="tc-testimonial-area pb-135 pt-130">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-xl-4">
+                    <div class="col-xl-4 d-none d-xl-block">
                         <div class="tc-testimonial-thumb p-relative text-center">
                             <img src="assets/img/home03/testimonial/test01.png" alt="">
                             <div class="tc-testimonial-bg-color"></div>
@@ -661,7 +707,7 @@
                             <div class="tc-test-quote mr-30">
                                 <img src="assets/img/home03/testimonial/quote.png" alt="">
                             </div>
-                            <div class="tc-testimonial-main-wrapper">
+                            <div class="tc-testimonial-main-wrapper p-relative">
                                 <div class="swiper tc-testimonial-active">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
@@ -717,8 +763,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="tc-test-2-slider-arrow d-flex align-items-center">
-                                    <div class="tc-test-button-prev tc-test-2-button tc-test-3-button tc-rotate-icon">dasf<i class="flaticon-right-arrow"></i></div>
+                                <div class="tc-test-2-slider-arrow tc-test-3-slider-arrow  d-flex align-items-center">
+                                    <div class="tc-test-button-prev tc-test-2-button tc-test-3-button tc-rotate-icon"><i class="flaticon-right-arrow"></i></div>
                                     <span></span>
                                     <div class="tc-test-button-next tc-test-2-button tc-test-3-button"><i class="flaticon-right-arrow"></i></div>
                                 </div>
@@ -758,11 +804,11 @@
         <!--===== Cta Area End =====-->
 
         <!--===== Footer Area Start =====-->
-        <footer class=" p-relative">
+        <footer class="p-relative">
             <div class="container">
                 <div class="tc-footer-widget-area tc-footer-widget-border pt-80 pb-40">
                     <div class="row">
-                        <div class="col-xl-3">
+                        <div class="col-xl-3 col-lg-6 col-md-6">
                             <div class="tc-footer-widget tc-footer-widget-2 tc-footer-col-1 mb-50">
                                 <h3 class="tc-footer-widget-title tc-footer-widget-title-white mb-20">Newsletter</h3>
                                 <div class="tc-footer-newsletter mb-45">
@@ -786,7 +832,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-lg-4 col-md-4">
+                        <div class="col-xl-3 col-lg-6 col-md-6">
                             <div class="tc-footer-widget tc-footer-widget-2 mb-50 tc-footer-col-3">
                                 <h3 class="tc-footer-widget-title tc-footer-widget-title-white mb-15">Quick Links</h3>
                                 <ul>
@@ -799,7 +845,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-lg-4 col-md-4">
+                        <div class="col-xl-3 col-lg-6 col-md-6">
                             <div class="tc-footer-widget tc-footer-widget-2 mb-50 tc-footer-col-4">
                                 <h3 class="tc-footer-widget-title tc-footer-widget-title-white mb-15">Contact Info</h3>
                                 <div class="tc-footer-content">
@@ -814,7 +860,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-lg-4 col-md-4">
+                        <div class="col-xl-3 col-lg-6 col-md-6">
                             <div class="tc-footer-widget tc-footer-widget-2-col-4 mb-50">
                                 <h3 class="tc-footer-widget-title tc-footer-widget-title-white mb-15">California</h3>
                                 <div class="footer-content">
@@ -832,19 +878,19 @@
                 </div>
                 <div class="tc-footer-copyright-area tc-footer-copyright-area-2 pt-40 pb-40 p-relative z-index-1">
                     <div class="row align-items-center ">
-                        <div class="col-xl-5 col-lg-4">
-                            <div class="tc-footer-copyright text-md-center text-lg-start ">
+                        <div class="col-xl-5 col-lg-12">
+                            <div class="tc-footer-copyright tc-footer-copyright-3 text-lg-start ">
                                 <p>© Copyright 2023 | Alright reserved
                                     exdos by <a href="#">Hr Design</a></p>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-lg-4">
-                            <div class="tc-copy-logo">
+                        <div class="col-xl-3 col-md-4">
+                            <div class="tc-copy-logo text-center text-sm-start">
                                 <a href="#"><img src="assets/img/home03/logo-black.png" alt=""></a>
                             </div>
                         </div>
-                        <div class="col-xl-4 col-lg-8">
-                            <div class="tc-footer-menu text-lg-end text-md-center ">
+                        <div class="col-xl-4 col-md-8">
+                            <div class="tc-footer-menu text-lg-end text-center ">
                                 <ul>
                                     <li><a href="#">Career</a></li>
                                     <li><a href="#">privacy & policy</a></li>
